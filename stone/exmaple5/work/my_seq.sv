@@ -1,0 +1,1 @@
+../tb/pat//my_seq.sv

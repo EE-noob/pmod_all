@@ -1,0 +1,17 @@
+../rtl/flipflop.v
+../tb/transaction.sv
+../tb/tx_if.sv
+../tb/tx_driver.sv
+../tb/tx_sequencer.sv
+../tb/tx_agent.sv
+../tb/rx_if.sv
+../tb/rx_monitor.sv
+../tb/rx_agent.sv
+../tb/scoreboard.sv
+../tb/tx_sequence.sv
+../tb/env.sv
+../tb/cov_port.sv
+../tb/assertion.sv
+../tb/simtop.sv
+./my_test.sv
+./my_seq.sv
