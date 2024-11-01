@@ -64,6 +64,8 @@ run:
 save:
 	@cp *.fsdb wave/$(PAT_NAME).fsdb
 
+vd:
+	verdi -sv -f filelist.f  -ssf *.fsdb -rcFile ~/dark.rc -nologo  & 
 ############ setup ############
 #setup:
 #	$(DESIGNWARE_HOME)/bin/dw_vip_setup -svtb -path $(VIP_DIR) -add ethernet_txrx_rvm_vera_vmt

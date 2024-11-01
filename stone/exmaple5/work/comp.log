@@ -3,14 +3,14 @@ Command: vcs -sverilog -fsdb -full64 -timescale=1ns/1ns +acc +vpi +error+1000 +v
 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm.sv +define+SYNOPSYS_SV +define+NTB \
 -ntb_define NTB -ntb_opts rvm -ntb_opts use_sigprop -ntb_opts dw_vip /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/dpi/uvm_dpi.cc \
 -CFLAGS -DVCS -debug_pp -f filelist.f -l comp.log -cm line+cond+fsm+branch+tgl -cm_name \
-simv -cm_dir ./cov/.vdb +define+SVA+ASSERT_ON
+simv -cm_dir ./cov/test_burst_transfer.vdb +define+SVA+ASSERT_ON
 
 Warning-[DEBUG_DEP] Option will be deprecated
   The option '-fsdb' will be deprecated in a future release.  Please use 
   '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
 
                          Chronologic VCS (TM)
-        Version O-2018.09-1_Full64 -- Tue Oct 29 23:13:41 2024
+        Version O-2018.09-1_Full64 -- Fri Nov  1 18:01:00 2024
                Copyright (c) 1991-2018 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -321,14 +321,51 @@ Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm_pkg
 Back to file '../tb/simtop.sv'.
 Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm_macros.svh'.
 Back to file '../tb/simtop.sv'.
+Parsing design file './my_test.sv'
 
-Error-[SFCOR] Source file cannot be opened
-  Source file "./my_test.sv" cannot be opened for reading due to 'No such file
-  or directory'.
-  Please fix above issue and compile again.
-  
-  
+Warning-[TMBIN] Too many bits in Based Number
+./my_test.sv, 53
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '00ff55'.
 
-3 warnings
-1 error
-CPU time: 1.406 seconds to compile
+
+Warning-[TMBIN] Too many bits in Based Number
+./my_test.sv, 60
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '00ff55'.
+
+Parsing design file './my_seq.sv'
+Top Level Modules:
+       simtop
+TimeScale is 1 ns / 1 ns
+VCS Coverage Metrics Release O-2018.09-1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Starting vcs inline pass...
+6 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package _vcs_vmm
+recompiling package uvm_pkg
+recompiling module cov_port
+recompiling module simtop
+All of 6 modules done
+make[1]: Entering directory '/home/ICer/ic_prjs/pmod/stone/exmaple5/work/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -fPIC -DVCS -O -I/home/synopsys/vcs-mx/O-2018.09-1/include    -c /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/dpi/uvm_dpi.cc \
+
+gcc  -w  -pipe -fPIC -DVCS -O -I/home/synopsys/vcs-mx/O-2018.09-1/include    -fPIC \
+-c -o uM9F1_0x2aB.o uM9F1_0x2aB.c
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+-L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib  uvm_dpi.o   objs/amcQw_d.o   _8097_archive_1.so \
+SIM_l.o    uM9F1_0x2aB.o   rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
+-lvcsnew -lsimprofile -lreader_common /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libBA.a \
+-luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o  _vcs_pli_stub_.o \
+/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/ICer/ic_prjs/pmod/stone/exmaple5/work/csrc'
+CPU time: 9.921 seconds to compile + .328 seconds to elab + .520 seconds to link

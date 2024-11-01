@@ -33,7 +33,7 @@ task my_test::main_phase(uvm_phase phase);
  tx_seq.start(env0.tx_agent0.sqr);
 
  tx_seq.set_mode(1,0,1,{24'h00,8'h00},0 ); //fix mode
- tx_seq.start(env0.tx_agent0.sqr);
+ tx_seq.start(env0.tx_agent0.sqr);//uvm自己实现的功能，start可以自动产生transaction并把结果给到通道env0.tx_agent0.sqr里面
 
  tx_seq.set_mode(1,0,1,{24'h00,8'haa},0 ); //fix mode
  tx_seq.start(env0.tx_agent0.sqr);

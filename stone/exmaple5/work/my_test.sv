@@ -1,1 +1,1 @@
-../tb/pat//my_test.sv
+../tb/pat/test_burst_transfer/my_test.sv
