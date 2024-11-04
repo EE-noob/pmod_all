@@ -11,7 +11,7 @@ Warning-[DEBUG_DEP] Option will be deprecated
   '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
 
                          Chronologic VCS (TM)
-        Version O-2018.09-1_Full64 -- Mon Nov  4 17:26:32 2024
+        Version O-2018.09-1_Full64 -- Tue Nov  5 00:08:33 2024
                Copyright (c) 1991-2018 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -354,7 +354,7 @@ Warning-[PCWM-W] Port connection width mismatch
 
 
 Warning-[PCWM-W] Port connection width mismatch
-../rtl/axi2uart_top.v, 606
+../rtl/axi2uart_top.v, 616
 "axi_internal_fifo #(AXI_FIFO_DEPTH, DATA_WIDTH_UART, AXI_FIFO_ADDR, 3'b111, , , , , , , , , ) axi_internal_fifo_rx_inst( .clk_i (clk),  .arstn_i (rst_n),  .rst_i (0),  .push_i (push_controller_rx_fifo),  .pull_i (rx_fifo_pull_int),  .data_i (data_rx_controller_fifo),  .data_o (rx_fifo_data_out_int),  .status_o (rx_status_int));"
   The following 32-bit expression is connected to 1-bit port "rst_i" of module
   "axi_internal_fifo", instance "axi_internal_fifo_rx_inst".
@@ -363,7 +363,7 @@ Warning-[PCWM-W] Port connection width mismatch
 
 
 Warning-[PCWM-W] Port connection width mismatch
-../rtl/axi2uart_top.v, 606
+../rtl/axi2uart_top.v, 616
 "axi_internal_fifo #(AXI_FIFO_DEPTH, DATA_WIDTH_UART, AXI_FIFO_ADDR, 3'b111, , , , , , , , , ) axi_internal_fifo_rx_inst( .clk_i (clk),  .arstn_i (rst_n),  .rst_i (0),  .push_i (push_controller_rx_fifo),  .pull_i (rx_fifo_pull_int),  .data_i (data_rx_controller_fifo),  .data_o (rx_fifo_data_out_int),  .status_o (rx_status_int));"
   The following 5-bit expression is connected to 8-bit port "status_o" of 
   module "axi_internal_fifo", instance "axi_internal_fifo_rx_inst".
@@ -398,7 +398,7 @@ gcc  -w  -pipe -fPIC -DVCS -O -I/home/synopsys/vcs-mx/O-2018.09-1/include    -fP
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
--L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib  uvm_dpi.o   objs/amcQw_d.o   _12386_archive_1.so \
+-L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib  uvm_dpi.o   objs/amcQw_d.o   _42766_archive_1.so \
 SIM_l.o    uM9F1_0x2aB.o   rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
 -lvcsnew -lsimprofile -lreader_common /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libBA.a \
@@ -409,4 +409,4 @@ rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -l
 ../simv up to date
 make[1]: Leaving directory '/home/ICer/ic_prjs/pmod/my_pmod/my_axi_lite2uart/work/csrc' \
 
-CPU time: 10.027 seconds to compile + .318 seconds to elab + .541 seconds to link
+CPU time: 10.599 seconds to compile + .351 seconds to elab + .526 seconds to link

@@ -1,7 +1,7 @@
 Command: /home/ICer/ic_prjs/pmod/my_pmod/my_axi_lite2uart/work/./simv +UVM_VERBOSITY=UVM_LOW -l vcs.log +UVM_TESTNAME=my_test -cm line+cond+fsm+branch+tgl -cm_name simv -cm_dir ./cov/test_single_transfer.vdb +sva_success
 Chronologic VCS simulator copyright 1991-2018
 Contains Synopsys proprietary information.
-Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Nov  4 17:26 2024
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Nov  5 00:08 2024
 ----------------------------------------------------------------
 UVM-1.1d.Synopsys
 (C) 2007-2013 Mentor Graphics Corporation
@@ -40,36 +40,110 @@ UVM_INFO ../tb/uvm_uart/uart_tx_agent.sv(35) @ 0: uvm_test_top.env0.uart_tx_agen
 UVM_INFO ../tb/uvm_uart/env.sv(33) @ 0: uvm_test_top.env0 [env] connect ok
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(48) @ 0: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] pre configure phase
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(62) @ 100: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] configure phase
+*****main start******
+*****prepare_exp_act******
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(69) @ 100: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] main phase
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(72) @ 100: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] main phase get xact before
 UVM_INFO ../tb/uvm_uart/uart_tx_sequence.sv(24) @ 600: uvm_test_top.env0.uart_tx_agent0.sqr@@uart_tx_seq [tx_seq] body in
 UVM_INFO ../tb/uvm_uart/uart_tx_sequence.sv(29) @ 600: uvm_test_top.env0.uart_tx_agent0.sqr@@uart_tx_seq [tx_seq] randomize
 UVM_INFO ../tb/uvm_uart/uart_tx_sequence.sv(33) @ 600: uvm_test_top.env0.uart_tx_agent0.sqr@@uart_tx_seq [tx_seq] tr set special
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(74) @ 600: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] main phase get xact after
-UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(131) @ 287892: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] send a transaction
-UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(132) @ 287892: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] rwtype=0
-UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(133) @ 287892: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] number=1
-UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(135) @ 287892: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] dat=0x ffdd2288
-UVM_INFO ../tb/uvm_uart/scoreboard.sv(35) @ 287892: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(113) @ 600: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] send a transaction
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(114) @ 600: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] rwtype=0
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(117) @ 600: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] dat_in[0]=0x 22
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(116) @ 83290: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] get a transaction
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(117) @ 83290: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] rwtype=0
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(119) @ 83290: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] dat_out[0]=22
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(49) @ 83310: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(113) @ 96351: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] send a transaction
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(114) @ 96351: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] rwtype=0
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(117) @ 96351: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] dat_in[1]=0x 88
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(116) @ 179070: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] get a transaction
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(117) @ 179070: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] rwtype=0
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(119) @ 179070: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] dat_out[1]=88
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(49) @ 179090: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(113) @ 192111: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] send a transaction
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(114) @ 192111: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] rwtype=0
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(117) @ 192111: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] dat_in[2]=0x bb
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(116) @ 274790: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] get a transaction
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(117) @ 274790: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] rwtype=0
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(119) @ 274790: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] dat_out[2]=bb
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(49) @ 274810: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(113) @ 287871: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] send a transaction
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(114) @ 287871: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] rwtype=0
+UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(117) @ 287871: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] dat_in[3]=0x ff
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(43) @ 287892: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
 UVM_INFO ../tb/uvm_uart/uart_tx_driver.sv(72) @ 287892: uvm_test_top.env0.uart_tx_agent0.drv [uart_tx_driver] main phase get xact before
 UVM_INFO ../tb/uvm_uart/uart_tx_sequence.sv(37) @ 287892: uvm_test_top.env0.uart_tx_agent0.sqr@@uart_tx_seq [tx_seq] body finish
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(116) @ 370570: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] get a transaction
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(117) @ 370570: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] rwtype=0
+UVM_INFO ../tb/uvm_uart/axi_rx_monitor.sv(119) @ 370570: uvm_test_top.env0.axi_rx_agent0.mon [axi_rx_monitor] dat_out[3]=ff
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(49) @ 370590: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/uvm_uart/scoreboard.sv(93) @ 1288092: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+--------------------------------------------
+Name               Type          Size  Value
+--------------------------------------------
+transaction        transaction   -     @865 
+  dat              sa(integral)  1     -    
+    [0]            integral      8     'h0  
+    [1]            integral      8     'h0  
+    [2]            integral      8     'h0  
+    [3]            integral      8     'h0  
+  rwtype           integral      1     'h0  
+  number           integral      3     'h0  
+  delay            integral      4     'h0  
+  baud_rate        sa(integral)  1     -    
+    [0]            integral      1     'h0  
+    [1]            integral      1     'h0  
+    [2]            integral      1     'h0  
+    [3]            integral      1     'h0  
+    [4]            integral      1     'h0  
+  clock_freq       integral      32    'h0  
+  parity_bit_en    integral      1     'h0  
+  parity_bit_mode  integral      1     'h0  
+--------------------------------------------
+actual tran is
+--------------------------------------------
+Name               Type          Size  Value
+--------------------------------------------
+transaction        transaction   -     @869 
+  dat              sa(integral)  1     -    
+    [0]            integral      8     'h0  
+    [1]            integral      8     'h0  
+    [2]            integral      8     'h0  
+    [3]            integral      8     'h0  
+  rwtype           integral      1     'h0  
+  number           integral      3     'h0  
+  delay            integral      4     'h0  
+  baud_rate        sa(integral)  1     -    
+    [0]            integral      1     'h0  
+    [1]            integral      1     'h0  
+    [2]            integral      1     'h0  
+    [3]            integral      1     'h0  
+    [4]            integral      1     'h0  
+  clock_freq       integral      32    'h0  
+  parity_bit_en    integral      1     'h0  
+  parity_bit_mode  integral      1     'h0  
+--------------------------------------------
 
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :   21
+UVM_INFO :   46
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
 [RNTST]     1
+[axi_rx_monitor]    12
 [env]     1
-[scoreboard]     1
+[scoreboard]     6
 [simtop]     1
 [testcase1]     1
 [tx_seq]     4
 [uart_tx_agent]     1
-[uart_tx_driver]    11
+[uart_tx_driver]    19
 $finish called from file "/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/base/uvm_root.svh", line 439.
 $finish at simulation time              1288092
 
@@ -78,6 +152,6 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 1288092 ns
-CPU Time:      0.660 seconds;       Data structure size:   0.5Mb
-Mon Nov  4 17:26:44 2024
+CPU Time:      0.810 seconds;       Data structure size:   0.5Mb
+Tue Nov  5 00:08:45 2024
 ***PAT_NAME = test_single_transfer ***

@@ -1,6 +1,6 @@
 // Synopsys, Inc.
 // User: ICer
-// Date: Mon Nov  4 17:26:35 2024
+// Date: Tue Nov  5 00:08:36 2024
 
 // ==================================================================================================
 // This config file prototype is produced from the last run using the complete list of extracted fsms.
@@ -137,12 +137,15 @@ StopState->ResetState
 MODULE=axi2uart_top
 CURRENT=read_state
 NEXT=read_state_d
-STATES=AckReadState,ConfigReadState,IdleReadState,ResetReadState
+STATES=AckReadState,ConfigReadState,HoldReadState,IdleReadState,ResetReadState
 TRANSITIONS=AckReadState->IdleReadState,
 AckReadState->ResetReadState,
 ConfigReadState->IdleReadState,
 ConfigReadState->ResetReadState,
+HoldReadState->AckReadState,
+HoldReadState->ResetReadState,
 IdleReadState->AckReadState,
+IdleReadState->HoldReadState,
 IdleReadState->ResetReadState,
 ResetReadState->ConfigReadState
 MODULE=axi2uart_top

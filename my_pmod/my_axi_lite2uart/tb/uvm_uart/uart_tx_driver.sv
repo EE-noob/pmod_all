@@ -72,8 +72,8 @@ task uart_tx_driver::main_phase(uvm_phase phase);
     `uvm_info("uart_tx_driver","main phase get xact before",UVM_LOW);
     seq_item_port.get_next_item(req);
     `uvm_info("uart_tx_driver","main phase get xact after",UVM_LOW);
-drive_bus();
-	  debug_info();
+    drive_bus();
+	  //debug_info();
     ap.write( req );
     seq_item_port.item_done();
   end
@@ -95,14 +95,14 @@ task uart_tx_driver::drive_bus();
   end
   else begin // //axi rd ,uart->axi
     //@vif.drv_cb; //use clocking bloc k to align with clock.
-    //while( i<req.number) begin
-    while( i<32) begin  
+  while( i<req.number) begin
+    //while( i<32) begin  
 if(vif.mon_cb.tx_ready_o)
       idle=#1 idle+1;
 
     if(~vif.drv_cb.busy_o && idle>0)//tx_ready_o)
       begin
-        vif.drv_cb.tx_data_i  <= req.dat[i+:8]; //req.dat for debug
+        vif.drv_cb.tx_data_i  <= req.dat[i];//req.dat[i+:8]; //req.dat for debug
 
         //para
         vif.drv_cb.baud_div_i <= req.clock_freq/req.baud_rate;
@@ -110,8 +110,13 @@ if(vif.mon_cb.tx_ready_o)
         vif.drv_cb.parity_bit_mode_i<=req.parity_bit_mode;
         //send bit
         vif.drv_cb.tx_send_i <= 1'b1;
+        `uvm_info("uart_tx_driver","send a transaction",UVM_LOW);
+        `uvm_info("uart_tx_driver",$sformatf("rwtype=%1b",req.rwtype),UVM_LOW);
+        //`uvm_info("uart_tx_driver",$sformatf("number=%1d",req.number),UVM_LOW);
+        //`uvm_info("uart_tx_driver",$sformatf("dat_length=%1d",req.number),UVM_LOW);
+        `uvm_info("uart_tx_driver",$sformatf("dat_in[%0d]=0x %0h",i,req.dat[i]),UVM_LOW);
         @vif.drv_cb; //delay 1 clock
-        i=#1 i+8;//不能这样，因为vif总是在时钟后激励，用while i阻塞赋值可能会早于vif的变化
+        i=#1 i+1;//不能直接延时固定值应该先@clk，因为vif总是在时钟后激励，用只用while i阻塞赋值可能会早于vif的变化
         idle=#1 idle-1;
       end
       else
@@ -132,9 +137,9 @@ task uart_tx_driver::debug_info();
   `uvm_info("uart_tx_driver",$sformatf("rwtype=%1b",req.rwtype),UVM_LOW);
   `uvm_info("uart_tx_driver",$sformatf("number=%1d",req.number),UVM_LOW);
   //`uvm_info("uart_tx_driver",$sformatf("dat_length=%1d",req.number),UVM_LOW);
-  `uvm_info("uart_tx_driver",$sformatf("dat=0x %0h",req.dat),UVM_LOW);
-  // `uvm_info("uart_tx_driver",$sformatf("dat0=0x %h",req.dat[0]),UVM_LOW);
-  // `uvm_info("uart_tx_driver",$sformatf("dat1=0x %h",req.dat[1]),UVM_LOW);
-  // `uvm_info("uart_tx_driver",$sformatf("dat2=0x %h",req.dat[2]),UVM_LOW);
-  // `uvm_info("uart_tx_driver",$sformatf("dat3=0x %h",req.dat[3]),UVM_LOW);
+  //`uvm_info("uart_tx_driver",$sformatf("dat=0x %0h",req.dat),UVM_LOW);
+  `uvm_info("uart_tx_driver",$sformatf("dat0=0x %h",req.dat[0]),UVM_LOW);
+  `uvm_info("uart_tx_driver",$sformatf("dat1=0x %h",req.dat[1]),UVM_LOW);
+  `uvm_info("uart_tx_driver",$sformatf("dat2=0x %h",req.dat[2]),UVM_LOW);
+  `uvm_info("uart_tx_driver",$sformatf("dat3=0x %h",req.dat[3]),UVM_LOW);
 endtask

@@ -124,36 +124,41 @@
       </fsmdef>
       <fsmdef file="140"  name="axi2uart_top"  lib=""  parameterized="1"  >
         <fsmshape >
-          <fsmfsm name="read_state"  id="0"  width="4"  line="357"  chksum="1142684192"  >
-            <state name="AckReadState"  value="parameterized"  id="0"  flag="L"  line="294"  />
-            <state name="ConfigReadState"  value="parameterized"  id="1"  flag="L"  line="274"  />
-            <state name="IdleReadState"  value="parameterized"  id="2"  flag="L"  line="282"  />
-            <state name="ResetReadState"  value="parameterized"  id="3"  flag="L"  line="357"  />
+          <fsmfsm name="read_state"  id="0"  width="4"  line="367"  chksum="1069707562"  >
+            <state name="AckReadState"  value="parameterized"  id="0"  flag="L"  line="319"  />
+            <state name="ConfigReadState"  value="parameterized"  id="1"  flag="L"  line="276"  />
+            <state name="HoldReadState"  value="parameterized"  id="2"  flag="L"  line="297"  />
+            <state name="IdleReadState"  value="parameterized"  id="3"  flag="L"  line="284"  />
+            <state name="ResetReadState"  value="parameterized"  id="4"  flag="L"  line="367"  />
 
-            <transition fromid="0"  toid="2"  flag="L"  line="332"  />
-            <transition fromid="0"  toid="3"  flag="L"  line="357"  />
+            <transition fromid="0"  toid="3"  flag="L"  line="342"  />
+            <transition fromid="0"  toid="4"  flag="L"  line="367"  />
             
-            <transition fromid="1"  toid="2"  flag="L"  line="282"  />
-            <transition fromid="1"  toid="3"  flag="L"  line="357"  />
+            <transition fromid="1"  toid="3"  flag="L"  line="284"  />
+            <transition fromid="1"  toid="4"  flag="L"  line="367"  />
             
-            <transition fromid="2"  toid="0"  flag="L"  line="294"  />
-            <transition fromid="2"  toid="3"  flag="L"  line="357"  />
+            <transition fromid="2"  toid="0"  flag="L"  line="333"  />
+            <transition fromid="2"  toid="4"  flag="L"  line="367"  />
             
-            <transition fromid="3"  toid="1"  flag="L"  line="274"  />
+            <transition fromid="3"  toid="0"  flag="L"  line="319"  />
+            <transition fromid="3"  toid="2"  flag="L"  line="297"  />
+            <transition fromid="3"  toid="4"  flag="L"  line="367"  />
+            
+            <transition fromid="4"  toid="1"  flag="L"  line="276"  />
             
           </fsmfsm>
-        <fsmfsm name="write_state"  id="1"  width="3"  line="544"  chksum="1844308621"  >
-          <state name="AckWriteState"  value="parameterized"  id="0"  flag="L"  line="427"  />
-          <state name="IdleWriteState"  value="parameterized"  id="1"  flag="L"  line="413"  />
-          <state name="ResetWriteState"  value="parameterized"  id="2"  flag="L"  line="544"  />
+        <fsmfsm name="write_state"  id="1"  width="3"  line="554"  chksum="1844308621"  >
+          <state name="AckWriteState"  value="parameterized"  id="0"  flag="L"  line="437"  />
+          <state name="IdleWriteState"  value="parameterized"  id="1"  flag="L"  line="423"  />
+          <state name="ResetWriteState"  value="parameterized"  id="2"  flag="L"  line="554"  />
 
-          <transition fromid="0"  toid="1"  flag="L"  line="504"  />
-          <transition fromid="0"  toid="2"  flag="L"  line="544"  />
+          <transition fromid="0"  toid="1"  flag="L"  line="514"  />
+          <transition fromid="0"  toid="2"  flag="L"  line="554"  />
           
-          <transition fromid="1"  toid="0"  flag="L"  line="427"  />
-          <transition fromid="1"  toid="2"  flag="L"  line="544"  />
+          <transition fromid="1"  toid="0"  flag="L"  line="437"  />
+          <transition fromid="1"  toid="2"  flag="L"  line="554"  />
           
-          <transition fromid="2"  toid="1"  flag="L"  line="413"  />
+          <transition fromid="2"  toid="1"  flag="L"  line="423"  />
           
         </fsmfsm>
       </fsmshape>

@@ -276,25 +276,58 @@ Command arguments:
 "../tb/uvm_uart/uart_tx_driver.sv", 74: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/uart_tx_driver.sv", 131: 
+"../tb/uvm_uart/uart_tx_driver.sv", 113: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/uart_tx_driver.sv", 132: 
+"../tb/uvm_uart/uart_tx_driver.sv", 114: 
 
 *Error* Syntax error at )
-"../tb/uvm_uart/uart_tx_driver.sv", 132: 
+"../tb/uvm_uart/uart_tx_driver.sv", 114: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/uart_tx_driver.sv", 133: 
+"../tb/uvm_uart/uart_tx_driver.sv", 117: 
 
 *Error* Syntax error at )
-"../tb/uvm_uart/uart_tx_driver.sv", 133: 
+"../tb/uvm_uart/uart_tx_driver.sv", 117: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/uart_tx_driver.sv", 135: 
+"../tb/uvm_uart/uart_tx_driver.sv", 136: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 137: 
 
 *Error* Syntax error at )
-"../tb/uvm_uart/uart_tx_driver.sv", 135: 
+"../tb/uvm_uart/uart_tx_driver.sv", 137: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 138: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 138: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 141: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 141: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 142: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 142: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 143: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 143: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 144: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 144: 
 
 *Warning* failed to find the class 'uvm_agent'.
 "../tb/uvm_uart/uart_tx_agent.sv", 2: 
@@ -372,28 +405,22 @@ Command arguments:
 "../tb/uvm_uart/axi_rx_monitor.sv", 32: 
 
 *Error* Syntax error at phase
-"../tb/uvm_uart/axi_rx_monitor.sv", 37: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 113: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 114: 
-
-*Error* Syntax error at )
-"../tb/uvm_uart/axi_rx_monitor.sv", 114: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 115: 
-
-*Error* Syntax error at )
-"../tb/uvm_uart/axi_rx_monitor.sv", 115: 
+"../tb/uvm_uart/axi_rx_monitor.sv", 38: 
 
 *Error* macro `uvm_info not defined
 "../tb/uvm_uart/axi_rx_monitor.sv", 116: 
 
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 117: 
+
 *Error* Syntax error at )
-"../tb/uvm_uart/axi_rx_monitor.sv", 116: 
+"../tb/uvm_uart/axi_rx_monitor.sv", 117: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
 
 *Warning* failed to find the class 'uvm_agent'.
 "../tb/uvm_uart/axi_rx_agent.sv", 1: 
@@ -492,40 +519,40 @@ Command arguments:
 "../tb/uvm_uart/scoreboard.sv", 45: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/scoreboard.sv", 71: 
+"../tb/uvm_uart/scoreboard.sv", 74: 
 
 *Error* Syntax error at "compare SUCCESSFULLY."
-"../tb/uvm_uart/scoreboard.sv", 71: 
+"../tb/uvm_uart/scoreboard.sv", 74: 
 
 *Error* Syntax error at else
-"../tb/uvm_uart/scoreboard.sv", 77: 
-
-*Error* macro `uvm_error not defined
-"../tb/uvm_uart/scoreboard.sv", 78: 
-
-*Error* Syntax error at "compare FAILED."
-"../tb/uvm_uart/scoreboard.sv", 78: 
-
-*Error* Syntax error at $display
-"../tb/uvm_uart/scoreboard.sv", 79: 
-
-*Error* Syntax error at exp_tx_tr
 "../tb/uvm_uart/scoreboard.sv", 80: 
 
-*Error* Syntax error at $display
+*Error* macro `uvm_error not defined
 "../tb/uvm_uart/scoreboard.sv", 81: 
 
-*Error* Syntax error at act_rx_tr
+*Error* Syntax error at "compare FAILED."
+"../tb/uvm_uart/scoreboard.sv", 81: 
+
+*Error* Syntax error at $display
 "../tb/uvm_uart/scoreboard.sv", 82: 
 
-*Error* Syntax error at end
+*Error* Syntax error at exp_tx_tr
 "../tb/uvm_uart/scoreboard.sv", 83: 
 
-*Error* Syntax error at end
+*Error* Syntax error at $display
 "../tb/uvm_uart/scoreboard.sv", 84: 
 
-*Error* Syntax error at endtask
+*Error* Syntax error at act_rx_tr
 "../tb/uvm_uart/scoreboard.sv", 85: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/scoreboard.sv", 86: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/scoreboard.sv", 87: 
+
+*Error* Syntax error at endtask
+"../tb/uvm_uart/scoreboard.sv", 88: 
 
 *Warning* failed to find the class 'uvm_env'.
 "../tb/uvm_uart/env.sv", 2: 
@@ -615,28 +642,25 @@ simtop
 "../rtl/axi2uart_top.v", 34: 
 
 *Error* failed to find identifier AXI_ADDR_WIDTH
-"../rtl/axi2uart_top.v", 72: 
+"../rtl/axi2uart_top.v", 73: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 78: 
-
-*Error* failed to find identifier AXI_RESP_WIDTH
 "../rtl/axi2uart_top.v", 79: 
 
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 80: 
+
 *Error* failed to find identifier AXI_ADDR_WIDTH
-"../rtl/axi2uart_top.v", 85: 
+"../rtl/axi2uart_top.v", 86: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 90: 
+"../rtl/axi2uart_top.v", 91: 
 
 *Error* failed to find identifier AXI_RESP_WIDTH
-"../rtl/axi2uart_top.v", 97: 
+"../rtl/axi2uart_top.v", 98: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 108: 
-
-*Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 111: 
+"../rtl/axi2uart_top.v", 109: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
 "../rtl/axi2uart_top.v", 112: 
@@ -644,209 +668,212 @@ simtop
 *Error* failed to find identifier AXI_ID_WIDTH
 "../rtl/axi2uart_top.v", 113: 
 
-*Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 135: 
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 114: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
 "../rtl/axi2uart_top.v", 136: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 143: 
+"../rtl/axi2uart_top.v", 137: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
 "../rtl/axi2uart_top.v", 144: 
 
-*Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 148: 
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 145: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
 "../rtl/axi2uart_top.v", 149: 
 
-*Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 155: 
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 150: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 159: 
+"../rtl/axi2uart_top.v", 156: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 160: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 164: 
-
-*Error* failed to find identifier AXI_RESP_WIDTH
 "../rtl/axi2uart_top.v", 165: 
 
-*Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 168: 
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 166: 
 
-*Error* failed to find identifier AXI_DATA_WIDTH
+*Error* failed to find identifier AXI_ID_WIDTH
 "../rtl/axi2uart_top.v", 169: 
 
-*Error* failed to find identifier AXI_RESP_WIDTH
+*Error* failed to find identifier AXI_DATA_WIDTH
 "../rtl/axi2uart_top.v", 170: 
 
-*Error* failed to find identifier UART_CONFIG_PARITY_EN
-"../rtl/axi2uart_top.v", 175: 
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 171: 
 
-*Error* failed to find identifier UART_CONFIG_PARITY_MODE
+*Error* failed to find identifier UART_CONFIG_PARITY_EN
 "../rtl/axi2uart_top.v", 176: 
 
-*Error* failed to find identifier UART_CONFIG_STOP_BITS
+*Error* failed to find identifier UART_CONFIG_PARITY_MODE
 "../rtl/axi2uart_top.v", 177: 
 
-*Error* failed to find identifier UART_CONFIG_DLAB
+*Error* failed to find identifier UART_CONFIG_STOP_BITS
 "../rtl/axi2uart_top.v", 178: 
 
-*Error* failed to find identifier AXI_RESP_WIDTH
-"../rtl/axi2uart_top.v", 234: 
+*Error* failed to find identifier UART_CONFIG_DLAB
+"../rtl/axi2uart_top.v", 179: 
 
 *Error* failed to find identifier AXI_RESP_WIDTH
-"../rtl/axi2uart_top.v", 239: 
+"../rtl/axi2uart_top.v", 235: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 240: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 268: 
+"../rtl/axi2uart_top.v", 270: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 271: 
+"../rtl/axi2uart_top.v", 273: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 280: 
+"../rtl/axi2uart_top.v", 282: 
 
 *Error* failed to find identifier AXI_ADDR_WIDTH
-"../rtl/axi2uart_top.v", 286: 
+"../rtl/axi2uart_top.v", 288: 
 
 *Error* failed to find identifier UART_RBR
-"../rtl/axi2uart_top.v", 287: 
+"../rtl/axi2uart_top.v", 289: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 290: 
+"../rtl/axi2uart_top.v", 292: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 290: 
+"../rtl/axi2uart_top.v", 292: 
 
 *Error* failed to find identifier UART_LSR
-"../rtl/axi2uart_top.v", 302: 
-
-*Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 329: 
-
-*Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 336: 
+"../rtl/axi2uart_top.v", 306: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
 "../rtl/axi2uart_top.v", 339: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 351: 
+"../rtl/axi2uart_top.v", 346: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 354: 
-
-*Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 405: 
-
-*Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 408: 
-
-*Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 409: 
-
-*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 409: 
-
-*Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 410: 
-
-*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 410: 
+"../rtl/axi2uart_top.v", 349: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 411: 
+"../rtl/axi2uart_top.v", 361: 
 
-*Error* failed to find identifier AXI_ADDR_WIDTH
-"../rtl/axi2uart_top.v", 417: 
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 364: 
 
-*Error* failed to find identifier UART_THR
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 415: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
 "../rtl/axi2uart_top.v", 418: 
 
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 419: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 419: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 420: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 420: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 421: 
+
+*Error* failed to find identifier AXI_ADDR_WIDTH
+"../rtl/axi2uart_top.v", 427: 
+
+*Error* failed to find identifier UART_THR
+"../rtl/axi2uart_top.v", 428: 
+
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 426: 
+"../rtl/axi2uart_top.v", 436: 
 
 *Error* failed to find identifier UART_IER
-"../rtl/axi2uart_top.v", 437: 
+"../rtl/axi2uart_top.v", 447: 
 
 *Error* failed to find identifier UART_BAUD_DIVISOR
-"../rtl/axi2uart_top.v", 453: 
+"../rtl/axi2uart_top.v", 463: 
 
 *Error* failed to find identifier UART_LCR
-"../rtl/axi2uart_top.v", 469: 
+"../rtl/axi2uart_top.v", 479: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 500: 
+"../rtl/axi2uart_top.v", 510: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 511: 
+"../rtl/axi2uart_top.v", 521: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 514: 
+"../rtl/axi2uart_top.v", 524: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 515: 
+"../rtl/axi2uart_top.v", 525: 
 
 *Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 515: 
+"../rtl/axi2uart_top.v", 525: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 516: 
+"../rtl/axi2uart_top.v", 526: 
 
 *Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 516: 
+"../rtl/axi2uart_top.v", 526: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 517: 
+"../rtl/axi2uart_top.v", 527: 
 
 *Error* failed to find identifier AXI_ID_WIDTH
-"../rtl/axi2uart_top.v", 531: 
+"../rtl/axi2uart_top.v", 541: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 534: 
+"../rtl/axi2uart_top.v", 544: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 535: 
+"../rtl/axi2uart_top.v", 545: 
 
 *Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 535: 
+"../rtl/axi2uart_top.v", 545: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 536: 
+"../rtl/axi2uart_top.v", 546: 
 
 *Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
-"../rtl/axi2uart_top.v", 536: 
+"../rtl/axi2uart_top.v", 546: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 537: 
+"../rtl/axi2uart_top.v", 547: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 568: 
+"../rtl/axi2uart_top.v", 578: 
 
 *Error* failed to find identifier AXI_DATA_WIDTH
-"../rtl/axi2uart_top.v", 569: 
+"../rtl/axi2uart_top.v", 579: 
 
 *Error* failed to find identifier AXI_DIV_WIDTH
-"../rtl/axi2uart_top.v", 570: 
+"../rtl/axi2uart_top.v", 580: 
 
 *Error* failed to find identifier AXI_FIFO_DEPTH
-"../rtl/axi2uart_top.v", 600: 
+"../rtl/axi2uart_top.v", 610: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 601: 
+"../rtl/axi2uart_top.v", 611: 
 
 *Error* failed to find identifier AXI_FIFO_DEPTH
-"../rtl/axi2uart_top.v", 653: 
+"../rtl/axi2uart_top.v", 663: 
 
 *Error* failed to find identifier DATA_WIDTH_UART
-"../rtl/axi2uart_top.v", 654: 
+"../rtl/axi2uart_top.v", 664: 
 
 *Warning* port sizes differ (1 vs 32) in port connection (port rst_i)
-"../rtl/axi2uart_top.v", 609: 
+"../rtl/axi2uart_top.v", 619: 
 
 *Warning* 'uvm_sequence' is not a parameter type.
 "../tb/uvm_uart/uart_tx_sequence.sv", 1: 
@@ -868,4 +895,4 @@ simtop
 
 *Error* failed to find identifier run_test
 "../tb/uvm_uart/axi2uart_simtop.sv", 24: 
-Total	261 error(s),   18 warning(s)
+Total	270 error(s),   18 warning(s)

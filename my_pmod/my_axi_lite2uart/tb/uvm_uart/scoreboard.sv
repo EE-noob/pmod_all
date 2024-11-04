@@ -10,12 +10,20 @@ class scoreboard extends uvm_scoreboard;
   uvm_tlm_analysis_fifo #(transaction) exp_tx_fifo;
   uvm_tlm_analysis_fifo #(transaction) act_rx_fifo;
 
+  transaction exp_tx_tr;
+  transaction act_rx_tr;
+  bit result;
 
   extern function new (string name,uvm_component parent);
   extern function write_exp_tx_ch(transaction tr);  //function not task(task is warning)
   extern function write_act_rx_ch(transaction tr);
+
+  extern task prepare_exp_act();
+
   extern task compare_exp_act();
-  extern task run_phase(uvm_phase phase);
+  extern task main_phase(uvm_phase phase);
+  extern task post_main_phase(uvm_phase phase);
+  //extern task run_phase(uvm_phase phase);
 
 
 endclass
@@ -42,15 +50,18 @@ function scoreboard::write_act_rx_ch(transaction tr);
    //tr.print();//for debug
 endfunction 
 
-task scoreboard::run_phase(uvm_phase phase);
+task scoreboard::main_phase(uvm_phase phase);
+  $display("*****main start******");
+  prepare_exp_act();
+  $display("*****main end******");
+endtask
+
+task scoreboard::post_main_phase(uvm_phase phase);
   compare_exp_act();
 endtask
 
-task scoreboard::compare_exp_act();
-  transaction exp_tx_tr;
-  transaction act_rx_tr;
-  bit result;
-  
+task scoreboard::prepare_exp_act();
+   $display("*****prepare_exp_act******");
   while(1) begin
      exp_tx_tr = new(); //need
      act_rx_tr = new();
@@ -58,12 +69,23 @@ task scoreboard::compare_exp_act();
      act_rx_fifo.get(act_rx_tr);
 
 	 act_rx_tr.delay = exp_tx_tr.delay; //do not compare delay
+   act_rx_tr.baud_rate = exp_tx_tr.baud_rate;
+   act_rx_tr.clock_freq = exp_tx_tr.clock_freq;
+   act_rx_tr.parity_bit_en  = exp_tx_tr.parity_bit_en ;
+   act_rx_tr.parity_bit_mode = exp_tx_tr.parity_bit_mode;
 
+     for(int i=exp_tx_tr.number;i<4;i++) begin
+         act_rx_tr.dat[i] = 0;
+         exp_tx_tr.dat[i] = 0; // not used data do not compare
+     end
+    end
 
-    //  for(int i=exp_tx_tr.number;i<4;i++) begin
-    //      act_rx_tr.dat[i] = 0;
-    //      exp_tx_tr.dat[i] = 0; // not used data do not compare
-    //  end
+    $display("actual tran is");
+        act_rx_tr.print();
+endtask
+
+task scoreboard::compare_exp_act();
+
    
 	 result = exp_tx_tr.compare(act_rx_tr);
    
@@ -81,8 +103,6 @@ task scoreboard::compare_exp_act();
         $display("actual tran is");
         act_rx_tr.print();
       end
-  end
+
 endtask
-
-
 

@@ -22,6 +22,7 @@ simtop.uart_tx_simtop.ResetState0
 simtop.uart_tx_simtop.StopState11
 simtop.axi2uart_top_inst.AckReadState9
 simtop.axi2uart_top_inst.ConfigReadState3
+simtop.axi2uart_top_inst.HoldReadState7
 simtop.axi2uart_top_inst.IdleReadState5
 simtop.axi2uart_top_inst.ResetReadState0
 simtop.axi2uart_top_inst.AckWriteState5

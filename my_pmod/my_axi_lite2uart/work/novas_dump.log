@@ -328,8 +328,8 @@ argv[9]=-cm_dir
 argv[10]=./cov/test_single_transfer.vdb
 argv[11]=+sva_success
 329 profile - 100
-          CPU/Mem usage: 0.210 sys,  0.230 user,  303.56M mem
-330 Mon Nov  4 17:26:44 2024
+          CPU/Mem usage: 0.210 sys,  0.230 user,  303.57M mem
+330 Tue Nov  5 00:08:44 2024
 331 pliAppInit
 332 FSDB_GATE is set.
 333 FSDB_RTL is set.
@@ -354,86 +354,86 @@ argv[11]=+sva_success
 352 *Verdi* : Enable +all dumping.
 353 *Verdi* : End of traversing.
 354 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  400.06M mem
-                   incr: 0.020 sys,  0.040 user,  8.96M mem
-                   accu: 0.020 sys,  0.040 user,  8.96M mem
-              accu incr: 0.020 sys,  0.040 user,  8.96M mem
+          CPU/Mem usage: 0.220 sys,  0.270 user,  400.08M mem
+                   incr: 0.000 sys,  0.040 user,  8.97M mem
+                   accu: 0.000 sys,  0.040 user,  8.97M mem
+              accu incr: 0.000 sys,  0.040 user,  8.97M mem
 
-          Count usage: 417 var,  345 idcode,  249 callback
-                 incr: 417 var,  345 idcode,  249 callback
-                 accu: 417 var,  345 idcode,  249 callback
-            accu incr: 417 var,  345 idcode,  249 callback
-355 Mon Nov  4 17:26:44 2024
+          Count usage: 417 var,  345 idcode,  248 callback
+                 incr: 417 var,  345 idcode,  248 callback
+                 accu: 417 var,  345 idcode,  248 callback
+            accu incr: 417 var,  345 idcode,  248 callback
+355 Tue Nov  5 00:08:44 2024
 356 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  401.12M mem
+          CPU/Mem usage: 0.220 sys,  0.270 user,  401.13M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.020 sys,  0.040 user,  10.01M mem
+                   accu: 0.000 sys,  0.040 user,  10.02M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 417 var,  345 idcode,  249 callback
+          Count usage: 417 var,  345 idcode,  248 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 417 var,  345 idcode,  249 callback
+                 accu: 417 var,  345 idcode,  248 callback
             accu incr: 0 var,  0 idcode,  0 callback
-357 Mon Nov  4 17:26:44 2024
+357 Tue Nov  5 00:08:44 2024
 358 sps_call_fsdbDumpsva_vd_main at 0 : ../tb/uvm_uart/axi2uart_simtop.sv(111)
 359 *Verdi* : Begin traversing the SVA assertions, layer (0).
 360 *Verdi* : End of traversing the SVA assertions.
 361 pliAppHDL_DumpSVAComplete traverse var: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  401.12M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+          CPU/Mem usage: 0.230 sys,  0.270 user,  401.13M mem
+                   incr: 0.010 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  0.00M mem
+              accu incr: 0.010 sys,  0.000 user,  0.00M mem
 
-          Count usage: 419 var,  347 idcode,  249 callback
+          Count usage: 419 var,  347 idcode,  248 callback
                  incr: 2 var,  2 idcode,  0 callback
                  accu: 2 var,  2 idcode,  0 callback
             accu incr: 2 var,  2 idcode,  0 callback
-362 Mon Nov  4 17:26:44 2024
+362 Tue Nov  5 00:08:44 2024
 363 pliAppHDL_DumpSVAComplete: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  401.12M mem
+          CPU/Mem usage: 0.230 sys,  0.270 user,  401.13M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 419 var,  347 idcode,  249 callback
+          Count usage: 419 var,  347 idcode,  248 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 2 var,  2 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-364 Mon Nov  4 17:26:44 2024
+364 Tue Nov  5 00:08:44 2024
 365 sps_call_fsdbDumpMDA_vd_main at 0 : ../tb/uvm_uart/axi2uart_simtop.sv(112)
 366 *Verdi* : Begin traversing the MDAs, layer (0).
 367 *Verdi* : Enable +mda and +packedmda dumping.
 368 *Verdi* : End of traversing the MDAs.
 369 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  401.12M mem
+          CPU/Mem usage: 0.230 sys,  0.270 user,  401.13M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 451 var,  347 idcode,  249 callback
+          Count usage: 451 var,  347 idcode,  248 callback
                  incr: 32 var,  0 idcode,  0 callback
                  accu: 32 var,  0 idcode,  0 callback
             accu incr: 32 var,  0 idcode,  0 callback
-370 Mon Nov  4 17:26:44 2024
+370 Tue Nov  5 00:08:44 2024
 371 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.230 sys,  0.270 user,  401.12M mem
+          CPU/Mem usage: 0.230 sys,  0.270 user,  401.13M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 451 var,  347 idcode,  249 callback
+          Count usage: 451 var,  347 idcode,  248 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 32 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-372 Mon Nov  4 17:26:44 2024
+372 Tue Nov  5 00:08:44 2024
 373 End of simulation at 1288092
-374 Mon Nov  4 17:26:44 2024
+374 Tue Nov  5 00:08:45 2024
 375 Begin FSDB profile info:
-376 FSDB Writer : bc1(129608) bcn(36362) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.007283) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+376 FSDB Writer : bc1(129467) bcn(100712) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.012916) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 377 End FSDB profile info
-378 Parallel profile    -  Flush:5 Expand:0 ProduceWait:0 ConsumerWait:1 BlockUsed:1
-379                        ProduceTime:0.657360714 ConsumerTime:0.009106185 Buffer:64MB
+378 Parallel profile    -  Flush:5 Expand:0 ProduceWait:0 ConsumerWait:2 BlockUsed:2
+379                        ProduceTime:0.804131073 ConsumerTime:0.018184440 Buffer:64MB
 380 SimExit
 381 Sim process exit

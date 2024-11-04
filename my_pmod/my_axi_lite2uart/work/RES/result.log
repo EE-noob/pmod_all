@@ -27,3 +27,26 @@ test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17
 test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:05:26 CST : no compare
 test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:06:39 CST : no compare
 test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:26:44 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 21:52:04 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 21:57:33 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:00:38 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:01:55 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:10:53 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:11:54 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:12:47 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:14:06 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:34:12 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:02:55 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:14:04 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:19:38 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:26:48 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:31:23 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:32:26 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:33:28 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:47:12 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:49:27 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:57:12 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:01:52 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:04:59 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:06:57 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:08:45 CST : OK

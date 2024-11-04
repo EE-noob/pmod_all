@@ -5,7 +5,7 @@ class transaction extends uvm_sequence_item;
   rand bit             rwtype   ; //0:read 1: write 
   rand bit[2:0]        number  ; //1-4
  
-  rand bit[31:0]       dat     ; //0-255
+  rand bit[3:0][7:0]    dat     ; //0-255
   rand bit[3:0]        delay   ; //0-15
 
   bit[31:0]       baud_rate;
@@ -38,7 +38,7 @@ class transaction extends uvm_sequence_item;
      if( rwtype == 0 )
 	   number == 1; //note: is == not =
 	 else
-       number dist { 2:/40, [3:4]:/60 }; //3+4 is 60%
+       number dist { 2:/40, [3:4]:/60 }; 
   }
   //data is random, no need to constraint
   constraint c_dat{
