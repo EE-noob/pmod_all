@@ -18,7 +18,7 @@ module simtop();
   initial begin//uvm的if与硬件duv里面if连接 
     uvm_config_db#(virtual uart_tx_if)::set(null,"uvm_test_top.env0.uart_tx_agent0.drv","uart_tx_if", uart_tx_sigs0);
     uvm_config_db#(virtual uart_rx_if)::set(null,"uvm_test_top.env0.uart_rx_agent0.mon","uart_rx_if", uart_rx_sigs0);
-    uvm_config_db#(virtual axi_rd_if)::set(null,"uvm_test_top.env0.axi_rx_agent0.mon","axi_rx_if", axi_rx_sigs0);
+    uvm_config_db#(virtual axi_rd_if)::set(null,"uvm_test_top.env0.axi_rx_agent0.mon","axi_rd_if", axi_rd_if_sigs0);
 
     `uvm_info("simtop","------uvm run test start--------",UVM_LOW);
     run_test();
@@ -123,9 +123,9 @@ initial begin
   end
 
 //<<<
-cov_port cov_port0( rx_sigs0 );
+// cov_port cov_port0( rx_sigs0 );
 
-assertion assert0( clk, rst_n, duv.enable_in, duv.enable_out );
+// assertion assert0( clk, rst_n, duv.enable_in, duv.enable_out );
 
 endmodule
 

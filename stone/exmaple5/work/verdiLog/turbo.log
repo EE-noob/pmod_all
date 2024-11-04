@@ -1,3 +1,0 @@
-Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -sv -f filelist.f -ssf simtop.fsdb -rcFile /home/ICer/dark.rc -nologo
-uname(Linux IC_EDA 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64)
-au time 11468.944034 14.966029 102.906782 delta 595054592 595054592 total 1020137472 1020137472

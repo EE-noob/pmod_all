@@ -50,6 +50,7 @@ task scoreboard::compare_exp_act();
   transaction exp_tx_tr;
   transaction act_rx_tr;
   bit result;
+  
   while(1) begin
      exp_tx_tr = new(); //need
      act_rx_tr = new();
@@ -57,12 +58,15 @@ task scoreboard::compare_exp_act();
      act_rx_fifo.get(act_rx_tr);
 
 	 act_rx_tr.delay = exp_tx_tr.delay; //do not compare delay
-     for(int i=exp_tx_tr.number;i<4;i++) begin
-         act_rx_tr.dat[i] = 0;
-         exp_tx_tr.dat[i] = 0; // not used data do not compare
-     end
 
+
+    //  for(int i=exp_tx_tr.number;i<4;i++) begin
+    //      act_rx_tr.dat[i] = 0;
+    //      exp_tx_tr.dat[i] = 0; // not used data do not compare
+    //  end
+   
 	 result = exp_tx_tr.compare(act_rx_tr);
+   
      if(result) begin
         `uvm_info(get_type_name(),"compare SUCCESSFULLY.", UVM_LOW);
         $display("expect tran is");

@@ -1,0 +1,412 @@
+Command: /home/ICer/ic_prjs/pmod/stone/exmaple5/work/./simv +UVM_VERBOSITY=UVM_LOW -l vcs.log +UVM_TESTNAME=my_test -cm line+cond+fsm+branch+tgl -cm_name simv -cm_dir ./cov/test_single_transfer.vdb +sva_success
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Nov  4 15:22 2024
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ../tb/simtop.sv(17) @ 0: reporter [simtop] ------uvm run test start--------
+UVM_INFO ./my_test.sv(15) @ 0: uvm_test_top [testcase1] -------testcase1 new----------
+UVM_INFO @ 0: reporter [RNTST] Running test my_test...
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'simtop.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : End of traversing the SVA assertions.
+UVM_INFO ../tb/tx_driver.sv(27) @ 0: uvm_test_top.env0.tx_agent0.drv [tx_driver] build phase
+mon connected
+UVM_INFO ../tb/tx_agent.sv(35) @ 0: uvm_test_top.env0.tx_agent0 [tx_agent] connect ok
+UVM_INFO ../tb/env.sv(33) @ 0: uvm_test_top.env0 [env] connect ok
+UVM_INFO ../tb/tx_driver.sv(38) @ 0: uvm_test_top.env0.tx_agent0.drv [tx_driver] pre configure phase
+UVM_INFO ../tb/tx_driver.sv(45) @ 0: uvm_test_top.env0.tx_agent0.drv [tx_driver] configure phase
+UVM_INFO ../tb/tx_driver.sv(51) @ 0: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase
+UVM_INFO ../tb/tx_driver.sv(54) @ 0: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(17) @ 500: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 500: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 500: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 500: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/tx_driver.sv(89) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=ff
+UVM_INFO ../tb/tx_driver.sv(93) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 530: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 530: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/tx_sequence.sv(17) @ 530: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 530: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 530: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 530: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/tx_driver.sv(89) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=00
+UVM_INFO ../tb/tx_driver.sv(93) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 570: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 570: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/tx_sequence.sv(17) @ 570: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 570: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 570: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 570: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/scoreboard.sv(41) @ 590: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=ff
+UVM_INFO ../tb/rx_monitor.sv(66) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 590: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 590: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @856                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'hff                                  
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h0                                   
+  begin_time                   time          64    500                                   
+  end_time                     time          64    530                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'hff 
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h0  
+--------------------------------------
+UVM_INFO ../tb/tx_driver.sv(89) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=aa
+UVM_INFO ../tb/tx_driver.sv(93) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 610: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 610: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/tx_sequence.sv(17) @ 610: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 610: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 610: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 610: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/scoreboard.sv(41) @ 630: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=00
+UVM_INFO ../tb/rx_monitor.sv(66) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 630: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 630: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @861                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'h0                                   
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h0                                   
+  begin_time                   time          64    530                                   
+  end_time                     time          64    570                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'h0  
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h0  
+--------------------------------------
+UVM_INFO ../tb/tx_driver.sv(89) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=55
+UVM_INFO ../tb/tx_driver.sv(93) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 650: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 650: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 650: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/scoreboard.sv(41) @ 670: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=aa
+UVM_INFO ../tb/rx_monitor.sv(66) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 670: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 670: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @865                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'haa                                  
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h0                                   
+  begin_time                   time          64    570                                   
+  end_time                     time          64    610                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'haa 
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h0  
+--------------------------------------
+UVM_INFO ../tb/scoreboard.sv(41) @ 710: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=55
+UVM_INFO ../tb/rx_monitor.sv(66) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 710: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 710: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @877                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'h55                                  
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h0                                   
+  begin_time                   time          64    610                                   
+  end_time                     time          64    650                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'h55 
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h0  
+--------------------------------------
+UVM_INFO ../tb/tx_sequence.sv(17) @ 850: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 850: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 850: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 850: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/tx_driver.sv(89) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=aa
+UVM_INFO ../tb/tx_driver.sv(93) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 870: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 870: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/tx_sequence.sv(17) @ 870: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body in
+UVM_INFO ../tb/tx_sequence.sv(22) @ 870: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] randomize
+UVM_INFO ../tb/tx_sequence.sv(26) @ 870: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] tr set special
+UVM_INFO ../tb/tx_driver.sv(56) @ 870: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact after
+UVM_INFO ../tb/tx_driver.sv(89) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] send a transaction
+UVM_INFO ../tb/tx_driver.sv(90) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] burst=0
+UVM_INFO ../tb/tx_driver.sv(91) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] number=1
+UVM_INFO ../tb/tx_driver.sv(92) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat0=55
+UVM_INFO ../tb/tx_driver.sv(93) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat1=00
+UVM_INFO ../tb/tx_driver.sv(94) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat2=00
+UVM_INFO ../tb/tx_driver.sv(95) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] dat3=00
+UVM_INFO ../tb/scoreboard.sv(35) @ 910: uvm_test_top.env0.scb0 [scoreboard] wirte tr to exp fifo.
+UVM_INFO ../tb/tx_driver.sv(54) @ 910: uvm_test_top.env0.tx_agent0.drv [tx_driver] main phase get xact before
+UVM_INFO ../tb/tx_sequence.sv(30) @ 910: uvm_test_top.env0.tx_agent0.sqr@@tx_seq [tx_seq] body finish
+UVM_INFO ../tb/scoreboard.sv(41) @ 930: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=aa
+UVM_INFO ../tb/rx_monitor.sv(66) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 930: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 930: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @905                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'haa                                  
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h4                                   
+  begin_time                   time          64    850                                   
+  end_time                     time          64    870                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'haa 
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h4  
+--------------------------------------
+UVM_INFO ../tb/scoreboard.sv(41) @ 970: uvm_test_top.env0.scb0 [scoreboard] wirte tr to act fifo.
+UVM_INFO ../tb/rx_monitor.sv(62) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] get a transaction
+UVM_INFO ../tb/rx_monitor.sv(63) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] burst=0
+UVM_INFO ../tb/rx_monitor.sv(64) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] number=1
+UVM_INFO ../tb/rx_monitor.sv(65) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat0=55
+UVM_INFO ../tb/rx_monitor.sv(66) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat1=00
+UVM_INFO ../tb/rx_monitor.sv(67) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat2=00
+UVM_INFO ../tb/rx_monitor.sv(68) @ 970: uvm_test_top.env0.rx_agent0.mon [rx_monitor] dat3=00
+UVM_INFO ../tb/scoreboard.sv(67) @ 970: uvm_test_top.env0.scb0 [scoreboard] compare SUCCESSFULLY.
+expect tran is
+-----------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                 
+-----------------------------------------------------------------------------------------
+tr                             transaction   -     @909                                  
+  dat                          sa(integral)  1     -                                     
+    [0]                        integral      8     'h55                                  
+    [1]                        integral      8     'h0                                   
+    [2]                        integral      8     'h0                                   
+    [3]                        integral      8     'h0                                   
+  burst                        integral      1     'h0                                   
+  number                       integral      3     'h1                                   
+  delay                        integral      4     'h4                                   
+  begin_time                   time          64    870                                   
+  end_time                     time          64    910                                   
+  depth                        int           32    'd2                                   
+  parent sequence (name)       string        6     tx_seq                                
+  parent sequence (full name)  string        38    uvm_test_top.env0.tx_agent0.sqr.tx_seq
+  sequencer                    string        31    uvm_test_top.env0.tx_agent0.sqr       
+-----------------------------------------------------------------------------------------
+actual tran is
+--------------------------------------
+Name         Type          Size  Value
+--------------------------------------
+transaction  transaction   -     @656 
+  dat        sa(integral)  1     -    
+    [0]      integral      8     'h55 
+    [1]      integral      8     'h0  
+    [2]      integral      8     'h0  
+    [3]      integral      8     'h0  
+  burst      integral      1     'h0  
+  number     integral      3     'h1  
+  delay      integral      4     'h4  
+--------------------------------------
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  148
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[env]     1
+[rx_monitor]    42
+[scoreboard]    18
+[simtop]     1
+[testcase1]     1
+[tx_agent]     1
+[tx_driver]    59
+[tx_seq]    24
+$finish called from file "/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/base/uvm_root.svh", line 439.
+$finish at simulation time                 1910
+"../tb/assertion.sv", 18: simtop.assert0.check_level0: started at 1890ns not finished
+"../tb/assertion.sv", 18: simtop.assert0.check_level0: started at 1870ns not finished
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1910 ns
+CPU Time:      0.530 seconds;       Data structure size:   0.5Mb
+Mon Nov  4 15:22:57 2024
+***PAT_NAME = test_single_transfer ***

@@ -20,10 +20,10 @@ powerDumped = 0
 [hb]
 postSimFile = /home/ICer/ic_prjs/pmod/stone/exmaple5/work/simtop.fsdb
 syncTime = 0
-viewport = 499 110 900 700 0 0 253 898
-activeNode = "simtop.duv"
-activeScope = "simtop.duv"
-activeFile = "../rtl/flipflop.v"
+viewport = 0 27 1918 833 0 0 253 898
+activeNode = "simtop.rx_sigs0"
+activeScope = "simtop.rx_sigs0"
+activeFile = "../tb/rx_if.sv"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
@@ -44,24 +44,26 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "simtop.duv"
-Scope2 = "simtop"
-rangeSelection = 2 2 5 19 1 1
+Scope1 = "simtop.rx_sigs0"
+Scope2 = "simtop.tx_sigs0"
+Scope3 = "simtop.duv"
+Scope4 = "simtop"
+multipleSelection = 1 9 4 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-sv" "-f" "filelist.f" "-rcFile" "/home/ICer/dark.rc" 
 invokeDir = /home/ICer/ic_prjs/pmod/stone/exmaple5/work
 [hb.sourceTab.1]
-scope = simtop.duv
-File = /home/ICer/ic_prjs/pmod/stone/exmaple5/rtl/flipflop.v
+scope = simtop.rx_sigs0
+File = /home/ICer/ic_prjs/pmod/stone/exmaple5/tb/rx_if.sv
 Line = 1
 [nMemoryManager]
 WaveformFile = /home/ICer/ic_prjs/pmod/stone/exmaple5/work/simtop.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 900 254 100 65
+viewPort = 0 27 1918 320 100 65
 primaryWindow = TRUE
 SessionFile = /home/ICer/ic_prjs/pmod/stone/exmaple5/work/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

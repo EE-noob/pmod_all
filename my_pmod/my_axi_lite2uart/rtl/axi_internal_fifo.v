@@ -1,23 +1,3 @@
-/* -----------------------------------------------------------------------------
- * Project        : AXI-lite UART IP Core
- * File           : axi_internal_fifo.v
- * Description    : FIFO to transfer data between the AXI bus and the UART module.
- * Organization   : BSC; CIC-IPN
- * Author(s)      : Abraham J. Ruiz R. (aruiz) (https://github.com/m4j0rt0m)
- *                  Vatistas Kostalabros (vkostalamp)
- * Email(s)       : abraham.ruiz@bsc.es; abraham.j.ruiz.r@gmail.com
- *                  vatistas.kostalabros@bsc.es
- * References     :
- * ------------------------------------------------------------------------------
- * Revision History
- *  Revision   | Author      | Description
- *  1.0        | aruiz       | First IP version with Avalon-Bus interface
- *  2.0        | vkostalamp  | AXI-Bus porting and documentation
- *  2.1        | aruiz       | Code refactoring with asynchronous reset
- *  3.0        | aruiz       | Two clock domains integration, a fixed
- *             |             | clock and an axi-bus clock
- * -----------------------------------------------------------------------------*/
-
 `default_nettype none
 
 /*
@@ -82,7 +62,7 @@ module axi_internal_fifo
       head_int      <=  0;
       tail_int      <=  0;
       available_int <=  0;
-      space         <=  FIFO_SIZE[INDEX_LENGTH:0];
+      space         <=  FIFO_SIZE;//[INDEX_LENGTH:0];
       valid_int     <=  0;
       /*for(i = 0; i < FIFO_SIZE; i = i + 1) begin
         fifo_int[i] <= {DATA_SIZE{1'b0}};
@@ -92,7 +72,7 @@ module axi_internal_fifo
         head_int      <=  0;
         tail_int      <=  0;
         available_int <=  0;
-        space         <=  FIFO_SIZE[INDEX_LENGTH:0];
+        space         <=  FIFO_SIZE;//[INDEX_LENGTH:0];
         valid_int     <=  0;
       end
       else begin

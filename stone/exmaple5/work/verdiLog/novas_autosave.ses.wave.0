@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 900 254 100 65
+viewPort 0 27 1918 320 100 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,7 +16,7 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 249.000000
+zoom 0.000000 1727.073538
 cursor 0.000000
 marker 0.000000
 
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 6
+markerPos 5
 
 ; event list
 ; addEvent event_name event_expression
@@ -47,13 +47,13 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/ICer/ic_prjs/pmod/stone/exmaple5/work/simtop.fsdb"
-addSignal -h 15 /simtop/duv/clk
-addSignal -h 15 -holdScope rst_n
-addSignal -h 15 -holdScope din[7:0]
-addSignal -h 15 -holdScope enable_in
-addSignal -h 15 -holdScope dout[7:0]
+addSignal -h 15 /simtop/duv/dout[7:0]
+addSignal -h 15 -holdScope clk
 addSignal -h 15 -holdScope enable_out
 addGroup "G2"
+addSignal -h 15 /simtop/rx_sigs0/drv_cb/enable_in
+addSignal -h 15 -holdScope din[7:0]
+addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm

@@ -409,7 +409,7 @@ module axi2uart_top (/*AUTOARG*/
         uart_baudrate_div_int_d = UART_BAUDRATE_DIV_INIT[AXI_DIV_WIDTH-1:0];
         baudrate_divisor_int_d  = UART_BAUDRATE_DIV_INIT[AXI_DIV_WIDTH-1:0];
         uart_config_reg_int_d   = {AXI_DATA_WIDTH{1'b0}};
-        uart_irq_en_int_d       = 1'b0;
+        uart_irq_en_int_d       = 1'b1;
         write_state_d           = IdleWriteState;
       end
       IdleWriteState: begin
@@ -534,7 +534,12 @@ module axi2uart_top (/*AUTOARG*/
       tx_fifo_data_in_int   <= {DATA_WIDTH_UART{1'b0}};
       uart_baudrate_div_int <= UART_BAUDRATE_DIV_INIT[AXI_DIV_WIDTH-1:0];
       baudrate_divisor_int  <= UART_BAUDRATE_DIV_INIT[AXI_DIV_WIDTH-1:0];
-      uart_config_reg_int   <= {AXI_DATA_WIDTH{1'b0}};
+      uart_config_reg_int   <= {AXI_DATA_WIDTH{1'b0}};// config 默认值
+        /* LCR config bits */
+  /* || 31 | 30.......5    |         4       |        3      |        2       |   1     |    0   || */
+  /* ||     reserved       | parity_bit_mode | parity_bit_en | stop_bits(1/2) |  Word Length Set || */
+  /*            0                    0                1               0           1          1   || = 0X0B */
+  // Parity bit mode = <0 odd / 1 = even>
       uart_irq_en_int       <= 1'b0;
       write_state           <= ResetWriteState;
     end
@@ -595,12 +600,13 @@ module axi2uart_top (/*AUTOARG*/
         .FIFO_SIZE    (AXI_FIFO_DEPTH),
         .DATA_SIZE    (DATA_WIDTH_UART),
         .INDEX_LENGTH (AXI_FIFO_ADDR),
-        .PORT_EN      (3'b000)  //..flag port enable [3-bits]: load | full | available_space
+        .PORT_EN      (3'b111) 
+        //.PORT_EN      (3'b000)  //..flag port enable [3-bits]: load | full | available_space
       )
     axi_internal_fifo_rx_inst (
         .clk_i    (clk),             // clock signal
         .arstn_i  (rst_n),            // active-low asynchronous reset
-        .rst_i    (rx_fifo_reset_int),        // active-high synchronous soft reset
+        .rst_i    (0),//(rx_fifo_reset_int),        // active-high synchronous soft reset
 
         .push_i   (push_controller_rx_fifo),  // push a new entry into the rx fifo from receiver ctrl
         .pull_i   (rx_fifo_pull_int),         // pull the oldest entry from an axi read operation

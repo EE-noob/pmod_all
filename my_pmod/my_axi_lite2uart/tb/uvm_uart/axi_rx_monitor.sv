@@ -28,7 +28,7 @@ endfunction
 function void axi_rx_monitor::build_phase(uvm_phase phase);
   super.build_phase(phase);
   //get vif from config_db( vif is a parameter of get function
-  if( !uvm_config_db#(virtual rx_if)::get(this,"","rx_if",vif))
+  if( !uvm_config_db#(virtual axi_rd_if)::get(this,"","axi_rd_if",vif))
     `uvm_fatal("axi_rx_monitor","Error in getting interface");
   ap = new("ap",this);
   req = new();//?? 为什么调用一下super.new就行了，类型什么的怎么确定//答transaction req;已经声明了 //driver 不需要new req，因为req是在tc或者说sequence里面被实例化的，而monitor是直接从if得到的req的值，所以必须new一下以获得内存。
@@ -63,11 +63,11 @@ task axi_rx_monitor::monitor_bus();
 
 
     while(1) begin
-      @vif.drv_cb;
-    if( vif.drv_cb.s_axi_rvalid == 1'b1 && vif.drv_cb.s_axi_rready) break;
+      @vif.mon_cb;
+    if( vif.mon_cb.s_axi_rvalid == 1'b1 && vif.mon_cb.s_axi_rready) break;
     end//wait for 
 
-    req.dat= vif.drv_cb.din;
+    req.dat= vif.drv_cb.s_axi_rdata;
     //     req.dat[req.number] = vif.drv_cb.din;
     //   req.number++;
     //     @vif.drv_cb;
@@ -85,11 +85,11 @@ task axi_rx_monitor::drive_ready();
       @vif.drv_cb;
     if( vif.drv_cb.s_axi_rvalid == 1'b1 ) break;
     end//wait for 
-    vif.drv_cb.s_axi_rready=#1 1'b1;
+    vif.drv_cb.s_axi_rready<= 1'b1;
     @vif.drv_cb;
 
     if( vif.drv_cb.s_axi_rvalid == 1'b0 ) 
-    vif.drv_cb.s_axi_rready=#1 1'b0;
+    vif.drv_cb.s_axi_rready<= 1'b0;
 endtask
 
 task axi_rx_monitor::drive_rd();
@@ -98,14 +98,14 @@ task axi_rx_monitor::drive_rd();
       @vif.drv_cb;
     if( vif.drv_cb.uart_irq == 1'b1 ) break;
     end//wait for irq
-    vif.drv_cb.s_axi_arrvalid=#1 1'b1;
-    vif.drv_cb.s_axi_araddr=#1 32'hffe8_0000;
+    vif.drv_cb.s_axi_arvalid<= 1'b1;
+    vif.drv_cb.s_axi_araddr<= 32'hffe8_0000;
     while(1) begin
       @vif.drv_cb;
     if( vif.drv_cb.s_axi_arready == 1'b1 ) break;
     end//wait for arready
-    vif.drv_cb.s_axi_arrvalid=#1 1'b0;
-    vif.drv_cb.s_axi_araddr=#1 32'h0000_0000;
+    vif.drv_cb.s_axi_arvalid<= 1'b0;
+    vif.drv_cb.s_axi_araddr<= 32'h0000_0000;
 endtask
 
 

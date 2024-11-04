@@ -12,6 +12,26 @@ interface uart_tx_if(input clk, input rst_n);
   logic                  tx_ready_o;         // transmitter is ready to receive the next bits to send from the controller
   logic                  busy_o;             // indicates that the transmitter is busy
 
+  integer   i;
+  integer   j;
+
+  clocking mon_cb @(posedge clk);
+  default input #1 output #1;
+   input en_i;               // enable signal
+   input stop_bits_i;        // number of required stop bits
+   input parity_bit_i;       // signal enabling/disabling parity bit
+   input parity_bit_mode_i;  // the mode of parity <0=odd>/<1=even>
+   input baud_div_i;         // Baud rate value
+   input tx_data_i;          // the parallel incoming bits to be sent serially
+   input tx_send_i;          // signals the sending of a bit
+
+   input i;
+   input j;
+   
+   input tx_ready_o;         // transmitter is ready to receive the next bits to send from the controller
+   input busy_o;              // indicates that the transmitter is busy
+endclocking
+
 
        clocking drv_cb @(posedge clk);
        default input #1 output #1;
@@ -22,6 +42,8 @@ interface uart_tx_if(input clk, input rst_n);
         output baud_div_i;         // Baud rate value
         output tx_data_i;          // the parallel incoming bits to be sent serially
         output tx_send_i;          // signals the sending of a bit
+        output i;
+        output j;
         
         input tx_ready_o;         // transmitter is ready to receive the next bits to send from the controller
         input busy_o;              // indicates that the transmitter is busy
