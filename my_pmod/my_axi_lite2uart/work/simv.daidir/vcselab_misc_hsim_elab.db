@@ -1187,4 +1187,4 @@ fHsimCongruencyConfigFile          	0
 fHsimCongruencyLogFile             	0
 fHsimCoverageEnabled               	1
 fHsimCoverageOptions               	279
-fHsimCoverageDir                   	./cov/test_single_transfer.vdb
+fHsimCoverageDir                   	./cov/mult_wr_trans.vdb

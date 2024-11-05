@@ -1,0 +1,59 @@
+test_burst_transfer                * ONLY ONE * 2024年 11月 01日 星期五 18:01:10 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 22:41:11 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 22:42:33 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:04:00 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:07:41 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:16:15 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:31:21 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:38:28 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:43:53 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:45:45 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:47:16 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 03日 星期日 23:51:27 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 00:00:13 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 00:09:04 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 14:57:36 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:06:00 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:08:36 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:14:00 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:14:30 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:15:38 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:34:56 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:39:25 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 15:53:24 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 16:05:33 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 16:26:24 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:02:24 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:05:26 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:06:39 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 17:26:44 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 21:52:04 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 21:57:33 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:00:38 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:01:55 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:10:53 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:11:54 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:12:47 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:14:06 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 22:34:12 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:02:55 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:14:04 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:19:38 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:26:48 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:31:23 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:32:26 CST : no compare
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:33:28 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:47:12 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:49:27 CST : NG:UVM check error
+test_single_transfer               * ONLY ONE * 2024年 11月 04日 星期一 23:57:12 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:01:52 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:04:59 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:06:57 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 00:08:45 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 13:51:11 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:03:43 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:09:35 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:19:53 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:22:32 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:37:32 CST : OK
+test_single_transfer               * ONLY ONE * 2024年 11月 05日 星期二 14:38:18 CST : OK

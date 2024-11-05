@@ -8,11 +8,16 @@ class transaction extends uvm_sequence_item;
   rand bit[3:0][7:0]    dat     ; //0-255
   rand bit[3:0]        delay   ; //0-15
 
+
+  rand bit[3:0]        strb;
+  bit[31:0]       addr;
+
   bit[31:0]       baud_rate;
   bit[31:0]       clock_freq ;
   bit             parity_bit_en;      
   bit             parity_bit_mode; 
  
+  
   //--register to factory
   `uvm_object_utils_begin( transaction )
  
@@ -21,7 +26,8 @@ class transaction extends uvm_sequence_item;
     `uvm_field_int(rwtype   ,UVM_ALL_ON)
     `uvm_field_int(number  ,UVM_ALL_ON)
     `uvm_field_int(delay   ,UVM_ALL_ON)
-  
+  `uvm_field_int(addr   ,UVM_ALL_ON)
+  `uvm_field_int(strb   ,UVM_ALL_ON)
   `uvm_field_sarray_int( baud_rate  ,UVM_ALL_ON)
   `uvm_field_int(        clock_freq    ,UVM_ALL_ON)
   `uvm_field_int(        parity_bit_en    ,UVM_ALL_ON)
@@ -29,6 +35,11 @@ class transaction extends uvm_sequence_item;
   `uvm_object_utils_end
 
   //add the constraint
+  constraint c_strb{
+     strb dist { 1:/25,2:/25,4:/25,8:/25 };
+     //0:40%, 1:60%
+  }
+
   constraint c_rwtype{
      rwtype dist { 0:/40,1:/60 };
      //0:40%, 1:60%

@@ -1,1 +1,1 @@
-../tb/pat/test_single_transfer/my_seq.sv
+../tb/pat/mult_wr_trans/my_seq.sv

@@ -1,0 +1,898 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -sv
+    -f rtl_list.f
+        ../rtl/axi_internal_fifo.v
+        ../rtl/uart_controller.v
+        ../rtl/uart_parity_bit_compute.v
+        ../rtl/uart_transmitter.v
+        ../rtl/uart_receiver.v
+        ../rtl/axi2uart_top.v
+    -f sim_list.f
+        ../tb/uvm_uart/transaction.sv
+        ../tb/uvm_uart/uart_tx_if.sv
+        ../tb/uvm_uart/uart_tx_sequence.sv
+        ../tb/uvm_uart/uart_tx_sequencer.sv
+        ../tb/uvm_uart/uart_tx_driver.sv
+        ../tb/uvm_uart/uart_tx_agent.sv
+        ../tb/uvm_uart/axi_rx_monitor.sv
+        ../tb/uvm_uart/axi_rd_if.sv
+        ../tb/uvm_uart/uart_rx_if.sv
+        ../tb/uvm_uart/axi_rx_agent.sv
+        ../tb/uvm_uart/scoreboard.sv
+        ../tb/uvm_uart/env.sv
+        ../tb/uvm_uart/axi2uart_simtop.sv
+        ./my_test.sv
+        ./my_seq.sv
+    -rcFile
+    /home/ICer/dark.rc
+
+
+*Error* `include file "axi_uart_defines.vh" cannot be read
+"../rtl/axi2uart_top.v", 22: 
+
+*Error* `include file "axi_uart.vh" cannot be read
+"../rtl/axi2uart_top.v", 23: 
+
+*Error* macro `_AXI_UART_DATA_WIDTH_ not defined
+"../rtl/axi2uart_top.v", 27: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 28: 
+
+*Error* macro `_AXI_UART_ADDR_WIDTH_ not defined
+"../rtl/axi2uart_top.v", 28: 
+
+*Error* macro `_AXI_UART_DIV_WIDTH_ not defined
+"../rtl/axi2uart_top.v", 29: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 30: 
+
+*Error* macro `_AXI_UART_ID_WIDTH_ not defined
+"../rtl/axi2uart_top.v", 30: 
+
+*Error* macro `_AXI_UART_RESP_WIDTH_ not defined
+"../rtl/axi2uart_top.v", 31: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 32: 
+
+*Error* macro `_AXI_UART_FIFO_DEPTH_ not defined
+"../rtl/axi2uart_top.v", 32: 
+
+*Error* macro `_AXI_UART_DEADLOCK_ not defined
+"../rtl/axi2uart_top.v", 36: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 37: 
+
+*Error* macro `_UART_RBR_ not defined
+"../rtl/axi2uart_top.v", 40: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 41: 
+
+*Error* macro `_UART_THR_ not defined
+"../rtl/axi2uart_top.v", 41: 
+
+*Error* macro `_UART_IER_ not defined
+"../rtl/axi2uart_top.v", 42: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 43: 
+
+*Error* macro `_UART_BAUD_DIVISOR_ not defined
+"../rtl/axi2uart_top.v", 43: 
+
+*Error* macro `_UART_LCR_ not defined
+"../rtl/axi2uart_top.v", 44: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 45: 
+
+*Error* macro `_UART_CONFIG_DLAB_ not defined
+"../rtl/axi2uart_top.v", 45: 
+
+*Error* macro `_UART_CONFIG_STOP_BITS_ not defined
+"../rtl/axi2uart_top.v", 46: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 47: 
+
+*Error* macro `_UART_CONFIG_PARITY_EN_ not defined
+"../rtl/axi2uart_top.v", 47: 
+
+*Error* macro `_UART_CONFIG_PARITY_MODE_ not defined
+"../rtl/axi2uart_top.v", 48: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 49: 
+
+*Error* macro `_UART_LSR_ not defined
+"../rtl/axi2uart_top.v", 49: 
+
+*Error* macro `_UART_LSR_DATA_READY_ not defined
+"../rtl/axi2uart_top.v", 50: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 51: 
+
+*Error* macro `_UART_LSR_TEMT_ not defined
+"../rtl/axi2uart_top.v", 51: 
+
+*Error* macro `_UART_LSR_THRE_ not defined
+"../rtl/axi2uart_top.v", 52: 
+
+*Error* Syntax error at localparam
+"../rtl/axi2uart_top.v", 53: 
+
+*Error* macro `_DATA_WIDTH_UART_ not defined
+"../rtl/axi2uart_top.v", 53: 
+
+*Error* macro `_UART_BAUDRATE_DIV_INIT_ not defined
+"../rtl/axi2uart_top.v", 54: 
+
+*Error* Syntax error at input
+"../rtl/axi2uart_top.v", 58: 
+
+*Warning* failed to find the class 'uvm_sequence_item'.
+"../tb/uvm_uart/transaction.sv", 2: 
+
+*Error* macro `uvm_object_utils_begin not defined
+"../tb/uvm_uart/transaction.sv", 17: 
+
+*Error* macro `uvm_field_sarray_int not defined
+"../tb/uvm_uart/transaction.sv", 20: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 21: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 22: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 23: 
+
+*Error* macro `uvm_field_sarray_int not defined
+"../tb/uvm_uart/transaction.sv", 25: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 26: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 27: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 28: 
+
+*Error* macro `uvm_object_utils_end not defined
+"../tb/uvm_uart/transaction.sv", 29: 
+
+*Warning* failed to find the class 'uvm_sequence'.
+"../tb/uvm_uart/uart_tx_sequence.sv", 1: 
+
+*Warning* 'uvm_sequence' is not a parameter type.
+"../tb/uvm_uart/uart_tx_sequence.sv", 1: 
+
+*Error* macro `uvm_object_utils not defined
+"../tb/uvm_uart/uart_tx_sequence.sv", 2: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_sequence.sv", 24: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_sequence.sv", 29: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_sequence.sv", 33: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_sequence.sv", 37: 
+
+*Warning* failed to find the class 'uvm_sequencer'.
+"../tb/uvm_uart/uart_tx_sequencer.sv", 2: 
+
+*Warning* 'uvm_sequencer' is not a parameter type.
+"../tb/uvm_uart/uart_tx_sequencer.sv", 2: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_sequencer.sv", 4: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_sequencer.sv", 5: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/uart_tx_sequencer.sv", 7: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_sequencer.sv", 13: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_sequencer.sv", 18: 
+
+*Warning* failed to find the class 'uvm_driver'.
+"../tb/uvm_uart/uart_tx_driver.sv", 2: 
+
+*Warning* 'uvm_driver' is not a parameter type.
+"../tb/uvm_uart/uart_tx_driver.sv", 2: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/uart_tx_driver.sv", 5: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 9: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_driver.sv", 15: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 16: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 17: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 18: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 19: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_driver.sv", 25: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 30: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 31: 
+
+*Error* macro `uvm_fatal not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 35: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 46: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 48: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 61: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 62: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_driver.sv", 68: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 69: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 72: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 74: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 113: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 114: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 114: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 117: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 117: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 136: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 137: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 137: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 138: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 138: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 141: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 141: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 142: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 142: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 143: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 143: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_driver.sv", 144: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_tx_driver.sv", 144: 
+
+*Warning* failed to find the class 'uvm_agent'.
+"../tb/uvm_uart/uart_tx_agent.sv", 2: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_agent.sv", 7: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_agent.sv", 8: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_agent.sv", 9: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/uart_tx_agent.sv", 11: 
+
+*Error* macro `uvm_component_utils_begin not defined
+"../tb/uvm_uart/uart_tx_agent.sv", 13: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/uart_tx_agent.sv", 14: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/uart_tx_agent.sv", 15: 
+
+*Error* macro `uvm_component_utils_end not defined
+"../tb/uvm_uart/uart_tx_agent.sv", 16: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_tx_agent.sv", 20: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_agent.sv", 24: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/uart_tx_agent.sv", 25: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_tx_agent.sv", 31: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/uart_tx_agent.sv", 32: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_tx_agent.sv", 35: 
+
+*Warning* failed to find the class 'uvm_monitor'.
+"../tb/uvm_uart/axi_rx_monitor.sv", 2: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/axi_rx_monitor.sv", 4: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 6: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_rx_monitor.sv", 10: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_monitor.sv", 11: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_monitor.sv", 14: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_rx_monitor.sv", 24: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_monitor.sv", 28: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/axi_rx_monitor.sv", 29: 
+
+*Error* macro `uvm_fatal not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 32: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_monitor.sv", 38: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 116: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 117: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_rx_monitor.sv", 117: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
+
+*Warning* failed to find the class 'uvm_agent'.
+"../tb/uvm_uart/axi_rx_agent.sv", 1: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_rx_agent.sv", 5: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_agent.sv", 6: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_agent.sv", 7: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/axi_rx_agent.sv", 9: 
+
+*Error* macro `uvm_component_utils_begin not defined
+"../tb/uvm_uart/axi_rx_agent.sv", 11: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/axi_rx_agent.sv", 12: 
+
+*Error* macro `uvm_component_utils_end not defined
+"../tb/uvm_uart/axi_rx_agent.sv", 13: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_rx_agent.sv", 18: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_agent.sv", 22: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/axi_rx_agent.sv", 23: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_rx_agent.sv", 28: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/axi_rx_agent.sv", 29: 
+
+*Error* macro `uvm_analysis_imp_decl not defined
+"../tb/uvm_uart/scoreboard.sv", 1: 
+
+*Error* macro `uvm_analysis_imp_decl not defined
+"../tb/uvm_uart/scoreboard.sv", 2: 
+
+*Warning* failed to find the class 'uvm_scoreboard'.
+"../tb/uvm_uart/scoreboard.sv", 4: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/scoreboard.sv", 5: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 7: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 8: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 10: 
+
+*Warning* symbol uvm_tlm_analysis_fifo duplicated
+"../tb/uvm_uart/scoreboard.sv", 11: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 11: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/scoreboard.sv", 14: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/scoreboard.sv", 18: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/scoreboard.sv", 23: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/scoreboard.sv", 35: 
+
+*Error* Syntax error at "wirte tr to exp fifo."
+"../tb/uvm_uart/scoreboard.sv", 35: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/scoreboard.sv", 37: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/scoreboard.sv", 41: 
+
+*Error* Syntax error at "wirte tr to act fifo."
+"../tb/uvm_uart/scoreboard.sv", 41: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/scoreboard.sv", 43: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/scoreboard.sv", 45: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/scoreboard.sv", 74: 
+
+*Error* Syntax error at "compare SUCCESSFULLY."
+"../tb/uvm_uart/scoreboard.sv", 74: 
+
+*Error* Syntax error at else
+"../tb/uvm_uart/scoreboard.sv", 80: 
+
+*Error* macro `uvm_error not defined
+"../tb/uvm_uart/scoreboard.sv", 81: 
+
+*Error* Syntax error at "compare FAILED."
+"../tb/uvm_uart/scoreboard.sv", 81: 
+
+*Error* Syntax error at $display
+"../tb/uvm_uart/scoreboard.sv", 82: 
+
+*Error* Syntax error at exp_tx_tr
+"../tb/uvm_uart/scoreboard.sv", 83: 
+
+*Error* Syntax error at $display
+"../tb/uvm_uart/scoreboard.sv", 84: 
+
+*Error* Syntax error at act_rx_tr
+"../tb/uvm_uart/scoreboard.sv", 85: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/scoreboard.sv", 86: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/scoreboard.sv", 87: 
+
+*Error* Syntax error at endtask
+"../tb/uvm_uart/scoreboard.sv", 88: 
+
+*Warning* failed to find the class 'uvm_env'.
+"../tb/uvm_uart/env.sv", 2: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/env.sv", 4: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/env.sv", 11: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 12: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 13: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/env.sv", 17: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 21: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/env.sv", 22: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 29: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/env.sv", 30: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/env.sv", 33: 
+
+*Error* `include file "uvm_pkg.sv" cannot be read
+"../tb/uvm_uart/axi2uart_simtop.sv", 1: 
+
+*Error* `include file "uvm_macros.svh" cannot be read
+"../tb/uvm_uart/axi2uart_simtop.sv", 5: 
+
+*Error* failed to find the package 'uvm_pkg'.
+"../tb/uvm_uart/axi2uart_simtop.sv", 4: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi2uart_simtop.sv", 23: 
+
+*Warning* failed to find the class 'uvm_test'.
+"./my_test.sv", 1: 
+
+*Error* macro `uvm_component_utils not defined
+"./my_test.sv", 3: 
+
+*Error* Syntax error at parent
+"./my_test.sv", 8: 
+
+*Error* Syntax error at phase
+"./my_test.sv", 9: 
+
+*Error* Syntax error at phase
+"./my_test.sv", 10: 
+
+*Error* Syntax error at parent
+"./my_test.sv", 13: 
+
+*Error* macro `uvm_info not defined
+"./my_test.sv", 15: 
+
+*Error* Syntax error at phase
+"./my_test.sv", 20: 
+
+*Error* Syntax error at super
+"./my_test.sv", 21: 
+
+*Error* Syntax error at phase
+"./my_test.sv", 27: 
+
+*Error* Syntax error at super
+"./my_test.sv", 28: 
+Highest level modules:
+simtop
+
+
+*Error* failed to find identifier AXI_FIFO_DEPTH
+"../rtl/axi2uart_top.v", 33: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 34: 
+
+*Error* failed to find identifier AXI_ADDR_WIDTH
+"../rtl/axi2uart_top.v", 73: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 79: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 80: 
+
+*Error* failed to find identifier AXI_ADDR_WIDTH
+"../rtl/axi2uart_top.v", 86: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 91: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 98: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 109: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 112: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 113: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 114: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 136: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 137: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 144: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 145: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 149: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 150: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 156: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 160: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 165: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 166: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 169: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 170: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 171: 
+
+*Error* failed to find identifier UART_CONFIG_PARITY_EN
+"../rtl/axi2uart_top.v", 176: 
+
+*Error* failed to find identifier UART_CONFIG_PARITY_MODE
+"../rtl/axi2uart_top.v", 177: 
+
+*Error* failed to find identifier UART_CONFIG_STOP_BITS
+"../rtl/axi2uart_top.v", 178: 
+
+*Error* failed to find identifier UART_CONFIG_DLAB
+"../rtl/axi2uart_top.v", 179: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 235: 
+
+*Error* failed to find identifier AXI_RESP_WIDTH
+"../rtl/axi2uart_top.v", 240: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 270: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 273: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 282: 
+
+*Error* failed to find identifier AXI_ADDR_WIDTH
+"../rtl/axi2uart_top.v", 288: 
+
+*Error* failed to find identifier UART_RBR
+"../rtl/axi2uart_top.v", 289: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 292: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 292: 
+
+*Error* failed to find identifier UART_LSR
+"../rtl/axi2uart_top.v", 306: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 339: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 346: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 349: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 361: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 364: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 415: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 418: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 419: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 419: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 420: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 420: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 421: 
+
+*Error* failed to find identifier AXI_ADDR_WIDTH
+"../rtl/axi2uart_top.v", 427: 
+
+*Error* failed to find identifier UART_THR
+"../rtl/axi2uart_top.v", 428: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 436: 
+
+*Error* failed to find identifier UART_IER
+"../rtl/axi2uart_top.v", 447: 
+
+*Error* failed to find identifier UART_BAUD_DIVISOR
+"../rtl/axi2uart_top.v", 463: 
+
+*Error* failed to find identifier UART_LCR
+"../rtl/axi2uart_top.v", 479: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 510: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 521: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 524: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 525: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 525: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 526: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 526: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 527: 
+
+*Error* failed to find identifier AXI_ID_WIDTH
+"../rtl/axi2uart_top.v", 541: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 544: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 545: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 545: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 546: 
+
+*Error* failed to find identifier UART_BAUDRATE_DIV_INIT[(AXI_DIV_WIDTH - 1):0]
+"../rtl/axi2uart_top.v", 546: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 547: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 578: 
+
+*Error* failed to find identifier AXI_DATA_WIDTH
+"../rtl/axi2uart_top.v", 579: 
+
+*Error* failed to find identifier AXI_DIV_WIDTH
+"../rtl/axi2uart_top.v", 580: 
+
+*Error* failed to find identifier AXI_FIFO_DEPTH
+"../rtl/axi2uart_top.v", 610: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 611: 
+
+*Error* failed to find identifier AXI_FIFO_DEPTH
+"../rtl/axi2uart_top.v", 663: 
+
+*Error* failed to find identifier DATA_WIDTH_UART
+"../rtl/axi2uart_top.v", 664: 
+
+*Warning* port sizes differ (1 vs 32) in port connection (port rst_i)
+"../rtl/axi2uart_top.v", 619: 
+
+*Warning* 'uvm_sequence' is not a parameter type.
+"../tb/uvm_uart/uart_tx_sequence.sv", 1: 
+
+*Warning* 'uvm_sequencer' is not a parameter type.
+"../tb/uvm_uart/uart_tx_sequencer.sv", 2: 
+
+*Warning* 'uvm_driver' is not a parameter type.
+"../tb/uvm_uart/uart_tx_driver.sv", 2: 
+
+*Error* failed to find identifier uvm_config_db(uart_tx_if)::set
+"../tb/uvm_uart/axi2uart_simtop.sv", 19: 
+
+*Error* failed to find identifier uvm_config_db(uart_rx_if)::set
+"../tb/uvm_uart/axi2uart_simtop.sv", 20: 
+
+*Error* failed to find identifier uvm_config_db(axi_rd_if)::set
+"../tb/uvm_uart/axi2uart_simtop.sv", 21: 
+
+*Error* failed to find identifier run_test
+"../tb/uvm_uart/axi2uart_simtop.sv", 24: 
+Total	270 error(s),   18 warning(s)

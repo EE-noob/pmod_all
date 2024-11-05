@@ -1,0 +1,2 @@
+\$unit::../rtl/axi2uart_top.v::../rtl/axi_internal_fifo.v...@908091290 00
+simtop2790

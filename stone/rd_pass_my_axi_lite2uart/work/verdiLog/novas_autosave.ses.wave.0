@@ -1,0 +1,101 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1918 320 243 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/ic_prjs/pmod/my_pmod/my_axi_lite2uart/work/testname.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 544.835977 668.080850
+cursor 610.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 10
+; marker line index
+markerPos 12
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/ICer/ic_prjs/pmod/my_pmod/my_axi_lite2uart/work/testname.fsdb"
+addSignal -h 15 /simtop/uart_tx_simtop/clk_i
+addSignal -h 15 -holdScope rstn_i
+addSignal -h 15 -holdScope en_i
+addSignal -h 15 -holdScope stop_bits_i
+addSignal -h 15 -holdScope parity_bit_i
+addSignal -h 15 -holdScope parity_bit_mode_i
+addSignal -h 15 -UNSIGNED -UDEC -holdScope baud_div_i[15:0]
+addSubGroup "i[31:0]"
+endSubGroup "i[31:0]"
+addSignal -h 15 /simtop/uart_tx_simtop/tx_o
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 -holdScope tx_data_i[7:0]
+addSignal -h 15 -holdScope busy_o
+addSignal -h 15 -holdScope tx_send_i
+addSignal -h 15 -holdScope tx_ready_o
+addSignal -h 15 -holdScope tx_ready
+addSignal -h 15 -holdScope tx_ready
+addSignal -h 15 -holdScope bitcount_int[3:0]
+addSignal -h 15 -holdScope state_d[4:0]
+addSignal -h 15 -holdScope counter_int[15:0]
+addSignal -h 15 -holdScope parity_bit_i
+addSignal -h 15 -UNSIGNED -UDEC -holdScope baud_div_i[15:0]
+addSignal -h 15 -holdScope state[4:0]
+addSignal -h 15 -holdScope tx_ready_d
+addGroup "G2"
+addSignal -h 15 /simtop/axi2uart_top_inst/s_axi_arready
+addSignal -h 15 -holdScope s_axi_rdata[31:0]
+addSignal -h 15 -holdScope s_axi_rresp[1:0]
+addSignal -h 15 -holdScope s_axi_rvalid
+addSignal -h 15 -holdScope s_axi_awready
+addSignal -h 15 -holdScope s_axi_wready
+addSignal -h 15 -holdScope s_axi_bresp[1:0]
+addSignal -h 15 -holdScope s_axi_bvalid
+addSignal -h 15 -holdScope uart_irq
+addSignal -h 15 -holdScope uart_tx
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope s_axi_araddr[4:0]
+addSignal -h 15 -holdScope s_axi_arvalid
+addSignal -h 15 -holdScope s_axi_rready
+addSignal -h 15 -holdScope s_axi_awaddr[4:0]
+addSignal -h 15 -holdScope s_axi_awvalid
+addSignal -h 15 -holdScope s_axi_wdata[31:0]
+addSignal -h 15 -holdScope s_axi_wstrb[3:0]
+addSignal -h 15 -holdScope s_axi_wvalid
+addSignal -h 15 -holdScope s_axi_bready
+addSignal -h 15 -holdScope uart_rx
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

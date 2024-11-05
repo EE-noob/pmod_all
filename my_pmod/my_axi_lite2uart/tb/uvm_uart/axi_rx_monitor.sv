@@ -39,6 +39,7 @@ task axi_rx_monitor::main_phase(uvm_phase phase);
   //super.main_phase(phase);
  
   fork
+    
     while(1) begin
     monitor_bus();
     ap.write( req );

@@ -14,11 +14,13 @@ module simtop();
   uart_tx_if uart_tx_sigs0(clk, rst_n);//sigs0 表示的是信号（signals）的意思。
   uart_rx_if uart_rx_sigs0(clk, rst_n);
   axi_rd_if axi_rd_if_sigs0(clk, rst_n);
+  axi_wr_if axi_wr_if_sigs0(clk, rst_n);
 
   initial begin//uvm的if与硬件duv里面if连接 
     uvm_config_db#(virtual uart_tx_if)::set(null,"uvm_test_top.env0.uart_tx_agent0.drv","uart_tx_if", uart_tx_sigs0);
     uvm_config_db#(virtual uart_rx_if)::set(null,"uvm_test_top.env0.uart_rx_agent0.mon","uart_rx_if", uart_rx_sigs0);
     uvm_config_db#(virtual axi_rd_if)::set(null,"uvm_test_top.env0.axi_rx_agent0.mon","axi_rd_if", axi_rd_if_sigs0);
+    uvm_config_db#(virtual axi_wr_if)::set(null,"uvm_test_top.env0.axi_tx_agent0.drv","axi_wr_if", axi_wr_if_sigs0);
 
     `uvm_info("simtop","------uvm run test start--------",UVM_LOW);
     run_test();
@@ -51,18 +53,18 @@ module simtop();
     .s_axi_rvalid(axi_rd_if_sigs0.s_axi_rvalid),
     .s_axi_rready(axi_rd_if_sigs0.s_axi_rready)
     
-    // ,
+    ,
     
-    // .s_axi_awaddr(s_axi_awaddr),
-    // .s_axi_awvalid(s_axi_awvalid),
-    // .s_axi_awready(s_axi_awready),
-    // .s_axi_wdata(s_axi_wdata),
-    // .s_axi_wstrb(s_axi_wstrb),
-    // .s_axi_wvalid(s_axi_wvalid),
-    // .s_axi_wready(s_axi_wready),
-    // .s_axi_bresp(s_axi_bresp),
-    // .s_axi_bvalid(s_axi_bvalid),
-    // .s_axi_bready(s_axi_bready)
+    .s_axi_awaddr(axi_wr_if_sigs0.s_axi_awaddr),
+    .s_axi_awvalid(axi_wr_if_sigs0.s_axi_awvalid),
+    .s_axi_awready(axi_wr_if_sigs0.s_axi_awready),
+    .s_axi_wdata(axi_wr_if_sigs0.s_axi_wdata),
+    .s_axi_wstrb(axi_wr_if_sigs0.s_axi_wstrb),
+    .s_axi_wvalid(axi_wr_if_sigs0.s_axi_wvalid),
+    .s_axi_wready(axi_wr_if_sigs0.s_axi_wready),
+    .s_axi_bresp(axi_wr_if_sigs0.s_axi_bresp),
+    .s_axi_bvalid(axi_wr_if_sigs0.s_axi_bvalid),
+    .s_axi_bready(axi_wr_if_sigs0.s_axi_bready)
   );
 
   uart_transmitter 

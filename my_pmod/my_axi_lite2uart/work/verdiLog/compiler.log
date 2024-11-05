@@ -18,9 +18,17 @@ Command arguments:
         ../tb/uvm_uart/uart_tx_agent.sv
         ../tb/uvm_uart/axi_rx_monitor.sv
         ../tb/uvm_uart/axi_rd_if.sv
-        ../tb/uvm_uart/uart_rx_if.sv
         ../tb/uvm_uart/axi_rx_agent.sv
         ../tb/uvm_uart/scoreboard.sv
+        ../tb/uvm_uart/axi_wr_if.sv
+        ../tb/uvm_uart/axi_tx_sequence.sv
+        ../tb/uvm_uart/axi_tx_sequencer.sv
+        ../tb/uvm_uart/axi_tx_driver.sv
+        ../tb/uvm_uart/axi_tx_agent.sv
+        ../tb/uvm_uart/uart_rx_monitor.sv
+        ../tb/uvm_uart/uart_rx_if.sv
+        ../tb/uvm_uart/uart_rx_agent.sv
+        ../tb/uvm_uart/wr_uart_scoreboard.sv
         ../tb/uvm_uart/env.sv
         ../tb/uvm_uart/axi2uart_simtop.sv
         ./my_test.sv
@@ -141,19 +149,7 @@ Command arguments:
 "../tb/uvm_uart/transaction.sv", 2: 
 
 *Error* macro `uvm_object_utils_begin not defined
-"../tb/uvm_uart/transaction.sv", 17: 
-
-*Error* macro `uvm_field_sarray_int not defined
-"../tb/uvm_uart/transaction.sv", 20: 
-
-*Error* macro `uvm_field_int not defined
-"../tb/uvm_uart/transaction.sv", 21: 
-
-*Error* macro `uvm_field_int not defined
 "../tb/uvm_uart/transaction.sv", 22: 
-
-*Error* macro `uvm_field_int not defined
-"../tb/uvm_uart/transaction.sv", 23: 
 
 *Error* macro `uvm_field_sarray_int not defined
 "../tb/uvm_uart/transaction.sv", 25: 
@@ -167,8 +163,26 @@ Command arguments:
 *Error* macro `uvm_field_int not defined
 "../tb/uvm_uart/transaction.sv", 28: 
 
-*Error* macro `uvm_object_utils_end not defined
+*Error* macro `uvm_field_int not defined
 "../tb/uvm_uart/transaction.sv", 29: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 30: 
+
+*Error* macro `uvm_field_sarray_int not defined
+"../tb/uvm_uart/transaction.sv", 31: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 32: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 33: 
+
+*Error* macro `uvm_field_int not defined
+"../tb/uvm_uart/transaction.sv", 34: 
+
+*Error* macro `uvm_object_utils_end not defined
+"../tb/uvm_uart/transaction.sv", 35: 
 
 *Warning* failed to find the class 'uvm_sequence'.
 "../tb/uvm_uart/uart_tx_sequence.sv", 1: 
@@ -408,19 +422,19 @@ Command arguments:
 "../tb/uvm_uart/axi_rx_monitor.sv", 38: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 116: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 117: 
-
-*Error* Syntax error at )
 "../tb/uvm_uart/axi_rx_monitor.sv", 117: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
+"../tb/uvm_uart/axi_rx_monitor.sv", 118: 
 
 *Error* Syntax error at )
-"../tb/uvm_uart/axi_rx_monitor.sv", 119: 
+"../tb/uvm_uart/axi_rx_monitor.sv", 118: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_rx_monitor.sv", 120: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_rx_monitor.sv", 120: 
 
 *Warning* failed to find the class 'uvm_agent'.
 "../tb/uvm_uart/axi_rx_agent.sv", 1: 
@@ -474,85 +488,487 @@ Command arguments:
 "../tb/uvm_uart/scoreboard.sv", 5: 
 
 *Error* Syntax error at #
-"../tb/uvm_uart/scoreboard.sv", 7: 
+"../tb/uvm_uart/scoreboard.sv", 13: 
 
 *Error* Syntax error at #
-"../tb/uvm_uart/scoreboard.sv", 8: 
-
-*Error* Syntax error at #
-"../tb/uvm_uart/scoreboard.sv", 10: 
-
-*Warning* symbol uvm_tlm_analysis_fifo duplicated
-"../tb/uvm_uart/scoreboard.sv", 11: 
-
-*Error* Syntax error at #
-"../tb/uvm_uart/scoreboard.sv", 11: 
-
-*Error* Syntax error at parent
 "../tb/uvm_uart/scoreboard.sv", 14: 
 
-*Error* Syntax error at phase
-"../tb/uvm_uart/scoreboard.sv", 18: 
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 16: 
+
+*Warning* symbol uvm_tlm_analysis_fifo duplicated
+"../tb/uvm_uart/scoreboard.sv", 17: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/scoreboard.sv", 17: 
 
 *Error* Syntax error at parent
-"../tb/uvm_uart/scoreboard.sv", 23: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/scoreboard.sv", 35: 
-
-*Error* Syntax error at "wirte tr to exp fifo."
-"../tb/uvm_uart/scoreboard.sv", 35: 
-
-*Error* Syntax error at endfunction
-"../tb/uvm_uart/scoreboard.sv", 37: 
-
-*Error* macro `uvm_info not defined
-"../tb/uvm_uart/scoreboard.sv", 41: 
-
-*Error* Syntax error at "wirte tr to act fifo."
-"../tb/uvm_uart/scoreboard.sv", 41: 
-
-*Error* Syntax error at endfunction
-"../tb/uvm_uart/scoreboard.sv", 43: 
+"../tb/uvm_uart/scoreboard.sv", 21: 
 
 *Error* Syntax error at phase
-"../tb/uvm_uart/scoreboard.sv", 45: 
+"../tb/uvm_uart/scoreboard.sv", 28: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/scoreboard.sv", 29: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/scoreboard.sv", 35: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/scoreboard.sv", 74: 
+"../tb/uvm_uart/scoreboard.sv", 47: 
+
+*Error* Syntax error at "wirte tr to exp fifo."
+"../tb/uvm_uart/scoreboard.sv", 47: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/scoreboard.sv", 49: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/scoreboard.sv", 53: 
+
+*Error* Syntax error at "wirte tr to act fifo."
+"../tb/uvm_uart/scoreboard.sv", 53: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/scoreboard.sv", 55: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/scoreboard.sv", 57: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/scoreboard.sv", 63: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/scoreboard.sv", 91: 
 
 *Error* Syntax error at "compare SUCCESSFULLY."
-"../tb/uvm_uart/scoreboard.sv", 74: 
+"../tb/uvm_uart/scoreboard.sv", 91: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/scoreboard.sv", 96: 
 
 *Error* Syntax error at else
-"../tb/uvm_uart/scoreboard.sv", 80: 
+"../tb/uvm_uart/scoreboard.sv", 97: 
 
 *Error* macro `uvm_error not defined
-"../tb/uvm_uart/scoreboard.sv", 81: 
+"../tb/uvm_uart/scoreboard.sv", 98: 
 
 *Error* Syntax error at "compare FAILED."
-"../tb/uvm_uart/scoreboard.sv", 81: 
+"../tb/uvm_uart/scoreboard.sv", 98: 
 
 *Error* Syntax error at $display
-"../tb/uvm_uart/scoreboard.sv", 82: 
+"../tb/uvm_uart/scoreboard.sv", 99: 
 
 *Error* Syntax error at exp_tx_tr
-"../tb/uvm_uart/scoreboard.sv", 83: 
+"../tb/uvm_uart/scoreboard.sv", 100: 
 
 *Error* Syntax error at $display
-"../tb/uvm_uart/scoreboard.sv", 84: 
+"../tb/uvm_uart/scoreboard.sv", 101: 
 
 *Error* Syntax error at act_rx_tr
-"../tb/uvm_uart/scoreboard.sv", 85: 
+"../tb/uvm_uart/scoreboard.sv", 102: 
 
 *Error* Syntax error at end
-"../tb/uvm_uart/scoreboard.sv", 86: 
-
-*Error* Syntax error at end
-"../tb/uvm_uart/scoreboard.sv", 87: 
+"../tb/uvm_uart/scoreboard.sv", 103: 
 
 *Error* Syntax error at endtask
-"../tb/uvm_uart/scoreboard.sv", 88: 
+"../tb/uvm_uart/scoreboard.sv", 105: 
+
+*Warning* failed to find the class 'uvm_sequence'.
+"../tb/uvm_uart/axi_tx_sequence.sv", 1: 
+
+*Warning* 'uvm_sequence' is not a parameter type.
+"../tb/uvm_uart/axi_tx_sequence.sv", 1: 
+
+*Error* macro `uvm_object_utils not defined
+"../tb/uvm_uart/axi_tx_sequence.sv", 2: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_sequence.sv", 26: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_sequence.sv", 31: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_sequence.sv", 35: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_sequence.sv", 39: 
+
+*Warning* failed to find the class 'uvm_sequencer'.
+"../tb/uvm_uart/axi_tx_sequencer.sv", 2: 
+
+*Warning* 'uvm_sequencer' is not a parameter type.
+"../tb/uvm_uart/axi_tx_sequencer.sv", 2: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_sequencer.sv", 4: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_sequencer.sv", 5: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/axi_tx_sequencer.sv", 7: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_sequencer.sv", 13: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_sequencer.sv", 18: 
+
+*Warning* failed to find the class 'uvm_driver'.
+"../tb/uvm_uart/axi_tx_driver.sv", 2: 
+
+*Warning* 'uvm_driver' is not a parameter type.
+"../tb/uvm_uart/axi_tx_driver.sv", 2: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/axi_tx_driver.sv", 5: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 9: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_driver.sv", 15: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 16: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 17: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 18: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 19: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_driver.sv", 25: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 30: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 31: 
+
+*Error* macro `uvm_fatal not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 35: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 46: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 48: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 60: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 61: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_driver.sv", 67: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 68: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 71: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 73: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 105: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 107: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 107: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 109: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 109: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 110: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 110: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 179: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 180: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 180: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 181: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 181: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 184: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 184: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 185: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 185: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 186: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 186: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_driver.sv", 187: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/axi_tx_driver.sv", 187: 
+
+*Warning* failed to find the class 'uvm_agent'.
+"../tb/uvm_uart/axi_tx_agent.sv", 1: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_agent.sv", 6: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_agent.sv", 7: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_agent.sv", 8: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/axi_tx_agent.sv", 10: 
+
+*Error* macro `uvm_component_utils_begin not defined
+"../tb/uvm_uart/axi_tx_agent.sv", 12: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/axi_tx_agent.sv", 13: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/axi_tx_agent.sv", 14: 
+
+*Error* macro `uvm_component_utils_end not defined
+"../tb/uvm_uart/axi_tx_agent.sv", 15: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/axi_tx_agent.sv", 19: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_agent.sv", 23: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/axi_tx_agent.sv", 24: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/axi_tx_agent.sv", 30: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/axi_tx_agent.sv", 31: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/axi_tx_agent.sv", 34: 
+
+*Warning* failed to find the class 'uvm_monitor'.
+"../tb/uvm_uart/uart_rx_monitor.sv", 2: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/uart_rx_monitor.sv", 4: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/uart_rx_monitor.sv", 6: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_rx_monitor.sv", 10: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_monitor.sv", 11: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_monitor.sv", 14: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_rx_monitor.sv", 24: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_monitor.sv", 28: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/uart_rx_monitor.sv", 29: 
+
+*Error* macro `uvm_fatal not defined
+"../tb/uvm_uart/uart_rx_monitor.sv", 32: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_monitor.sv", 38: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_rx_monitor.sv", 107: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_rx_monitor.sv", 108: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_rx_monitor.sv", 108: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/uart_rx_monitor.sv", 110: 
+
+*Error* Syntax error at )
+"../tb/uvm_uart/uart_rx_monitor.sv", 110: 
+
+*Warning* failed to find the class 'uvm_agent'.
+"../tb/uvm_uart/uart_rx_agent.sv", 1: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_rx_agent.sv", 5: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_agent.sv", 6: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_agent.sv", 7: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/uart_rx_agent.sv", 9: 
+
+*Error* macro `uvm_component_utils_begin not defined
+"../tb/uvm_uart/uart_rx_agent.sv", 11: 
+
+*Error* macro `uvm_field_object not defined
+"../tb/uvm_uart/uart_rx_agent.sv", 12: 
+
+*Error* macro `uvm_component_utils_end not defined
+"../tb/uvm_uart/uart_rx_agent.sv", 13: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/uart_rx_agent.sv", 18: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_agent.sv", 22: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/uart_rx_agent.sv", 23: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/uart_rx_agent.sv", 28: 
+
+*Error* Syntax error at super
+"../tb/uvm_uart/uart_rx_agent.sv", 29: 
+
+*Error* macro `uvm_analysis_imp_decl not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 1: 
+
+*Error* macro `uvm_analysis_imp_decl not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 2: 
+
+*Warning* failed to find the class 'uvm_scoreboard'.
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 4: 
+
+*Error* macro `uvm_component_utils not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 5: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 13: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 14: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 16: 
+
+*Warning* symbol uvm_tlm_analysis_fifo duplicated
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 17: 
+
+*Error* Syntax error at #
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 17: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 21: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 28: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 29: 
+
+*Error* Syntax error at parent
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 35: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 47: 
+
+*Error* Syntax error at "wirte tr to exp fifo."
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 47: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 49: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 53: 
+
+*Error* Syntax error at "wirte tr to act fifo."
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 53: 
+
+*Error* Syntax error at endfunction
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 55: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 57: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 63: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 94: 
+
+*Error* Syntax error at "compare SUCCESSFULLY."
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 94: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 99: 
+
+*Error* Syntax error at else
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 100: 
+
+*Error* macro `uvm_error not defined
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 101: 
+
+*Error* Syntax error at "compare FAILED."
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 101: 
+
+*Error* Syntax error at $display
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 102: 
+
+*Error* Syntax error at exp_tx_tr
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 103: 
+
+*Error* Syntax error at $display
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 104: 
+
+*Error* Syntax error at act_rx_tr
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 105: 
+
+*Error* Syntax error at end
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 106: 
+
+*Error* Syntax error at endtask
+"../tb/uvm_uart/wr_uart_scoreboard.sv", 108: 
 
 *Warning* failed to find the class 'uvm_env'.
 "../tb/uvm_uart/env.sv", 2: 
@@ -561,31 +977,34 @@ Command arguments:
 "../tb/uvm_uart/env.sv", 4: 
 
 *Error* Syntax error at parent
-"../tb/uvm_uart/env.sv", 11: 
-
-*Error* Syntax error at phase
-"../tb/uvm_uart/env.sv", 12: 
-
-*Error* Syntax error at phase
 "../tb/uvm_uart/env.sv", 13: 
 
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 14: 
+
+*Error* Syntax error at phase
+"../tb/uvm_uart/env.sv", 15: 
+
 *Error* Syntax error at parent
-"../tb/uvm_uart/env.sv", 17: 
+"../tb/uvm_uart/env.sv", 19: 
 
 *Error* Syntax error at phase
-"../tb/uvm_uart/env.sv", 21: 
+"../tb/uvm_uart/env.sv", 23: 
 
 *Error* Syntax error at super
-"../tb/uvm_uart/env.sv", 22: 
+"../tb/uvm_uart/env.sv", 24: 
 
 *Error* Syntax error at phase
-"../tb/uvm_uart/env.sv", 29: 
+"../tb/uvm_uart/env.sv", 33: 
 
 *Error* Syntax error at super
-"../tb/uvm_uart/env.sv", 30: 
+"../tb/uvm_uart/env.sv", 34: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/env.sv", 33: 
+"../tb/uvm_uart/env.sv", 37: 
+
+*Error* macro `uvm_info not defined
+"../tb/uvm_uart/env.sv", 41: 
 
 *Error* `include file "uvm_pkg.sv" cannot be read
 "../tb/uvm_uart/axi2uart_simtop.sv", 1: 
@@ -597,7 +1016,7 @@ Command arguments:
 "../tb/uvm_uart/axi2uart_simtop.sv", 4: 
 
 *Error* macro `uvm_info not defined
-"../tb/uvm_uart/axi2uart_simtop.sv", 23: 
+"../tb/uvm_uart/axi2uart_simtop.sv", 25: 
 
 *Warning* failed to find the class 'uvm_test'.
 "./my_test.sv", 1: 
@@ -884,15 +1303,27 @@ simtop
 *Warning* 'uvm_driver' is not a parameter type.
 "../tb/uvm_uart/uart_tx_driver.sv", 2: 
 
-*Error* failed to find identifier uvm_config_db(uart_tx_if)::set
-"../tb/uvm_uart/axi2uart_simtop.sv", 19: 
+*Warning* 'uvm_sequence' is not a parameter type.
+"../tb/uvm_uart/axi_tx_sequence.sv", 1: 
 
-*Error* failed to find identifier uvm_config_db(uart_rx_if)::set
+*Warning* 'uvm_sequencer' is not a parameter type.
+"../tb/uvm_uart/axi_tx_sequencer.sv", 2: 
+
+*Warning* 'uvm_driver' is not a parameter type.
+"../tb/uvm_uart/axi_tx_driver.sv", 2: 
+
+*Error* failed to find identifier uvm_config_db(uart_tx_if)::set
 "../tb/uvm_uart/axi2uart_simtop.sv", 20: 
 
-*Error* failed to find identifier uvm_config_db(axi_rd_if)::set
+*Error* failed to find identifier uvm_config_db(uart_rx_if)::set
 "../tb/uvm_uart/axi2uart_simtop.sv", 21: 
 
+*Error* failed to find identifier uvm_config_db(axi_rd_if)::set
+"../tb/uvm_uart/axi2uart_simtop.sv", 22: 
+
+*Error* failed to find identifier uvm_config_db(axi_wr_if)::set
+"../tb/uvm_uart/axi2uart_simtop.sv", 23: 
+
 *Error* failed to find identifier run_test
-"../tb/uvm_uart/axi2uart_simtop.sv", 24: 
-Total	270 error(s),   18 warning(s)
+"../tb/uvm_uart/axi2uart_simtop.sv", 26: 
+Total	397 error(s),   32 warning(s)

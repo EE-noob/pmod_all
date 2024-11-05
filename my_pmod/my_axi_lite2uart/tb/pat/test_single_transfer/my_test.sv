@@ -37,8 +37,8 @@ task my_test::main_phase(uvm_phase phase);
  
  //the corner timming,interval between enable is 1
  //{32'hff_dd_22_88}
-//  (bit mod,bit rwtype, bit[2:0] number,bit[31:0] dat, bit[3:0] delay
-//   baud_rate,bit[31:0] clock_freq ,  bit  parity_bit_en,  bit  parity_bit_mode <0=odd>/<1=even>
+//  set_mode(bit mod,bit rwtype, bit[2:0] number,bit[3:0][7:0] dat, bit[3:0] delay
+//  ,  bit [31:0] addr_i 
  uart_tx_seq.set_mode(1,0,4,{{8'hff},{8'hbb},{8'h88},{8'h22}},0,
         115200  ,50_000_000,1,  0 ); //fix mode
  uart_tx_seq.start(env0.uart_tx_agent0.sqr);

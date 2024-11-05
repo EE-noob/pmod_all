@@ -17,7 +17,17 @@ logic                  rx_valid_o;    // rx valid output
         input rx_data_o;   
         input rx_valid_o;  
        endclocking
-             
+ 
+       clocking mon_cb @(posedge clk);
+       default input #1 output #1;
+        input en_i;        
+        input stop_bits_i; 
+        input parity_bit_i;
+        input baud_div_i;  
+        input rx_data_o;   
+        input rx_valid_o;  
+     endclocking
+
       modport rx_driver(clocking drv_cb);//在接口中使用modport结构能够将信号1、分组 ， 2、指定方向。
 
 endinterface: uart_rx_if

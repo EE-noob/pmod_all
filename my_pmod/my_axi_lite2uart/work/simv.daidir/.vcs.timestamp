@@ -460,7 +460,7 @@
 -picarchive
 -sverilog
 -timescale=1ns/1ns
-./cov/test_single_transfer.vdb
+./cov/mult_wr_trans.vdb
 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm.sv
 /home/synopsys/vcs-mx/O-2018.09-1/linux64/bin/vcs1
 /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
@@ -522,7 +522,7 @@ QTINC=/usr/lib/qt-3.3/include
 QTDIR=/usr/lib/qt-3.3
 QEMU_HOME=/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0
 PT_HOME=/home/synopsys/pts/O-2018.06-SP1
-PAT_NAME=test_single_transfer
+PAT_NAME=mult_wr_trans
 OVA_UUM=0
 MMSIMHOME=/home/cadence/MMSIM151
 MGLS_LICENSE_FILE=/home/mentor/questasim/mentor.dat
@@ -531,11 +531,11 @@ MGC_HOME=/home/mentor/
 MGC_CALIBRE_SCHEMATIC_SERVER=IC_EDA:9199
 MGC_CALIBRE_LAYOUT_SERVER=IC_EDA:9189
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/4
-MAKE_TERMERR=/dev/pts/4
+MAKE_TERMOUT=/dev/pts/7
+MAKE_TERMERR=/dev/pts/7
 MAKEOVERRIDES=${-*-command-variables-*-}
 MAKELEVEL=1
-MAKEFLAGS= -- PAT_NAME=test_single_transfer
+MAKEFLAGS= -- PAT_NAME=mult_wr_trans
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_TIME=zh_CN.UTF-8
 LC_PAPER=zh_CN.UTF-8
@@ -550,8 +550,8 @@ IMSETTINGS_MODULE=none
 IMSETTINGS_INTEGRATE_DESKTOP=yes
 ICC2_HOME=/home/synopsys/icc2/O-2018.06-SP1
 HISTCONTROL=ignoredups
-GNOME_TERMINAL_SERVICE=:1.106
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/67cfec94_b0d9_452e_a677_7e6d42adcedb
+GNOME_TERMINAL_SERVICE=:1.109
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/3dec4e6d_125b_4749_8d0b_fdb34bc0fd98
 GNOME_SHELL_SESSION_MODE=classic
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GDM_LANG=zh_CN.UTF-8
@@ -566,7 +566,7 @@ CDSHOME=/home/cadence/IC617
 CALIBRE_HOME=/home/mentor//Calibre2015/aoi_cal_2015.2_36.27
 CADHOME=/home/cadence
 0
-164
+172
 1730708767 ../rtl/axi_uart.vh
 1730711184 ../rtl/axi_uart_defines.vh
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/vcs/snps_reg.svh
@@ -702,21 +702,29 @@ CADHOME=/home/cadence
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/macros/uvm_version_defines.svh
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm_macros.svh
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.1/src/uvm_pkg.sv
-1730215026 ./my_seq.sv
-1730728819 ./my_test.sv
-1730624557 ../tb/uvm_uart/axi2uart_simtop.sv
-1730472681 ../tb/uvm_uart/env.sv
-1730736508 ../tb/uvm_uart/scoreboard.sv
-1730475376 ../tb/uvm_uart/axi_rx_agent.sv
-1730459557 ../tb/uvm_uart/uart_rx_if.sv
+1730820445 ./my_seq.sv
+1730821847 ./my_test.sv
+1730824302 ../tb/uvm_uart/axi2uart_simtop.sv
+1730824521 ../tb/uvm_uart/env.sv
+1730824002 ../tb/uvm_uart/wr_uart_scoreboard.sv
+1730822613 ../tb/uvm_uart/uart_rx_agent.sv
+1730816214 ../tb/uvm_uart/uart_rx_if.sv
+1730823919 ../tb/uvm_uart/uart_rx_monitor.sv
+1730822087 ../tb/uvm_uart/axi_tx_agent.sv
+1730823235 ../tb/uvm_uart/axi_tx_driver.sv
+1730807070 ../tb/uvm_uart/axi_tx_sequencer.sv
+1730821572 ../tb/uvm_uart/axi_tx_sequence.sv
+1730809964 ../tb/uvm_uart/axi_wr_if.sv
+1730818991 ../tb/uvm_uart/scoreboard.sv
+1730822762 ../tb/uvm_uart/axi_rx_agent.sv
 1730625296 ../tb/uvm_uart/axi_rd_if.sv
-1730735763 ../tb/uvm_uart/axi_rx_monitor.sv
+1730823765 ../tb/uvm_uart/axi_rx_monitor.sv
 1730623804 ../tb/uvm_uart/uart_tx_agent.sv
-1730735330 ../tb/uvm_uart/uart_tx_driver.sv
+1730736776 ../tb/uvm_uart/uart_tx_driver.sv
 1730623429 ../tb/uvm_uart/uart_tx_sequencer.sv
 1730729499 ../tb/uvm_uart/uart_tx_sequence.sv
 1730703382 ../tb/uvm_uart/uart_tx_if.sv
-1730729419 ../tb/uvm_uart/transaction.sv
+1730824094 ../tb/uvm_uart/transaction.sv
 1730733224 ../rtl/axi2uart_top.v
 1729952781 ../rtl/uart_receiver.v
 1730706786 ../rtl/uart_transmitter.v
@@ -727,7 +735,7 @@ CADHOME=/home/cadence
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/rvm/vmm.sv
 1539414455 /home/synopsys/vcs-mx/O-2018.09-1/etc/rvm/vmm.sv
 1539412481 /home/synopsys/vcs-mx/O-2018.09-1/include/cm_vcsd.tab
-1730643740 sim_list.f
+1730820431 sim_list.f
 1730621622 rtl_list.f
 1539400757 /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcsdp.tab
 1550753332 /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
@@ -737,5 +745,5 @@ CADHOME=/home/cadence
 1539401183 /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/liberrorinf.so
 1539401125 /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libsnpsmalloc.so
 1539401175 /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libvfs.so
-1730736524 simv.daidir
+1730824535 simv.daidir
 -1 partitionlib

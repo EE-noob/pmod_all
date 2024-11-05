@@ -1,0 +1,104 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        1
+    ],
+    "axi2uart_top_0000": [
+        "axi2uart_top_0000",
+        "p0BCY",
+        "module",
+        12
+    ],
+    "_vcs_mirror_class_package": [
+        "_vcs_mirror_class_package",
+        "WipHW",
+        "module",
+        2
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        5
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        3
+    ],
+    "axi_internal_fifo_0000": [
+        "axi_internal_fifo_0000",
+        "Bvfk1",
+        "module",
+        8
+    ],
+    "uart_parity_bit_compute": [
+        "uart_parity_bit_compute",
+        "pBkkz",
+        "module",
+        9
+    ],
+    "_vcs_unit__3368649266": [
+        "_vcs_unit__3368649266",
+        "IUurJ",
+        "module",
+        4
+    ],
+    "uart_transmitter_0000": [
+        "uart_transmitter_0000",
+        "NncyH",
+        "module",
+        10
+    ],
+    "uart_rx_if": [
+        "uart_rx_if",
+        "LbvAV",
+        "module",
+        15
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        7
+    ],
+    "_vcs_vmm": [
+        "_vcs_vmm",
+        "x8hd1",
+        "module",
+        6
+    ],
+    "uart_receiver_0000": [
+        "uart_receiver_0000",
+        "c1GL7",
+        "module",
+        11
+    ],
+    "uart_tx_if": [
+        "uart_tx_if",
+        "YAiaQ",
+        "module",
+        13
+    ],
+    "axi_rd_if": [
+        "axi_rd_if",
+        "sxYIf",
+        "module",
+        14
+    ],
+    "simtop": [
+        "simtop",
+        "JRkh3",
+        "module",
+        16
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        17
+    ]
+}

@@ -4,15 +4,19 @@
 class scoreboard extends uvm_scoreboard;
   `uvm_component_utils(scoreboard)
 
+transaction exp_tx_tr;
+transaction act_rx_tr;
+bit result;
+
+
+
   uvm_analysis_imp_exp_tx_ch #(transaction,scoreboard) exp_tx_ch;
   uvm_analysis_imp_act_rx_ch #(transaction,scoreboard) act_rx_ch;
     
   uvm_tlm_analysis_fifo #(transaction) exp_tx_fifo;
   uvm_tlm_analysis_fifo #(transaction) act_rx_fifo;
 
-  transaction exp_tx_tr;
-  transaction act_rx_tr;
-  bit result;
+
 
   extern function new (string name,uvm_component parent);
   extern function write_exp_tx_ch(transaction tr);  //function not task(task is warning)
@@ -63,8 +67,8 @@ endtask
 task scoreboard::prepare_exp_act();
    $display("*****prepare_exp_act******");
   while(1) begin
-     exp_tx_tr = new(); //need
-     act_rx_tr = new();
+    //  exp_tx_tr = new(); //如果在这里new，每次循环就为这两个对象重新分配了内存，之前的值就找不到了
+    //  act_rx_tr = new();
      exp_tx_fifo.get(exp_tx_tr);
      act_rx_fifo.get(act_rx_tr);
 
@@ -79,16 +83,10 @@ task scoreboard::prepare_exp_act();
          exp_tx_tr.dat[i] = 0; // not used data do not compare
      end
     end
-
-    $display("actual tran is");
-        act_rx_tr.print();
 endtask
 
 task scoreboard::compare_exp_act();
-
-   
 	 result = exp_tx_tr.compare(act_rx_tr);
-   
      if(result) begin
         `uvm_info(get_type_name(),"compare SUCCESSFULLY.", UVM_LOW);
         $display("expect tran is");
